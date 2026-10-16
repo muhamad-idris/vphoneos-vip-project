@@ -39,7 +39,8 @@ Baca berurutan SEBELUM menyentuh apa pun:
 ## Pola patch smali yang aman (terbukti build + boot sampai UI)
 
 - Edit HANYA file di bawah `work/apktool-out/smali_classes3/` (tree VIP)
-  atau `work/apktool-orig/` (tree debug). Jangan sentuh resources (decode `-r`).
+  atau `work/apktool-orig/` (tree debug) — decode dulu bila belum ada
+  (`apktool d -r`, lihat README). Jangan sentuh resources (decode `-r`).
 - `.locals` BOLEH di-bump +1..3 lalu pakai register TERATAS yang baru
   (terbukti aman di puluhan method). JANGAN pakai register tengah tanpa
   bukti dead (wajib baca konteks ±20 baris).

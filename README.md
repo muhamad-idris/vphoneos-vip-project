@@ -28,16 +28,20 @@ Lihat `work/file.md` §5 untuk matriks eliminasi lengkap.
 
 ```
 work/
-  file.md                 <- RANGKUMAN UTAMA (mulai di sini)
+  file.md                 <- RANGKUMAN TEMUAN (mulai di sini)
   REPORT-isVip.md         <- detail per ronde + Evidence ID REA
-  patch-*.diff            <- semua patch smali (aplikasikan ke hasil apktool decode)
+  patch-*.diff            <- semua patch smali
   frida-*.js             <- skrip observasi Frida (WAJIB ES5, lihat AGENTS.md)
   rea-*.json             <- evidence REA (JADX headless 0.7.1)
-  logcat-*.txt           <- capture logcat per eksperimen
-  *-build-*.log, apksigner*.log, zipalign*.log
+  logcat-*.txt, *-build-*.log, apksigner*.log, zipalign*.log
   orig/                  <- backup pre-patch (smali + 2 .so referensi + SHA256SUMS)
   AndroidManifest.xml, apk-contents.txt, action_rules.xml, *.sha256
 ```
+
+> Catatan: tree `apktool-out/`/`apktool-orig/` dan APK hasil build SENGAJA
+> tidak ikut (ratusan GB bila diakumulasi; GitHub menolak file >100 MB).
+> Decode ulang dari APK sumber sesuai "Reproduksi" di bawah, lalu terapkan
+> `patch-*.diff`.
 
 **Sengaja TIDAK ikut** (lihat `.gitignore`; GitHub menolak file >100 MB):
 APK sumber & hasil (2,6 GB), `apktool-out/`, `apktool-orig/` (7,4 GB),
