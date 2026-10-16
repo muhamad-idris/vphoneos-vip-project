@@ -1,0 +1,1139 @@
+.class public final Lcom/vphonegaga/titan/user/User$Builder;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/vphonegaga/titan/user/User;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Builder"
+.end annotation
+
+
+# instance fields
+.field private avatar:Ljava/lang/String;
+
+.field private bindEmailAccount:Ljava/lang/String;
+
+.field private bindGoogleAccount:Ljava/lang/String;
+
+.field private coinByShareNum:I
+
+.field private coinNum:I
+
+.field private email:Ljava/lang/String;
+
+.field private enableAccAdvanceFeatures:Z
+
+.field private encryptPhone:Ljava/lang/String;
+
+.field private isVip:Z
+
+.field private login_type:Ljava/lang/String;
+
+.field private nickname:Ljava/lang/String;
+
+.field private phone:Ljava/lang/String;
+
+.field private registerDate:J
+
+.field private shareCode:Ljava/lang/String;
+
+.field private shareContext:Ljava/lang/String;
+
+.field private shareImg:Ljava/lang/String;
+
+.field private shareNum:I
+
+.field private shareTitle:Ljava/lang/String;
+
+.field private subscription:I
+
+.field private token:Ljava/lang/String;
+
+.field private token2:Ljava/lang/String;
+
+.field private tokenExpireTime:J
+
+.field private uid:Ljava/lang/String;
+
+.field private uuid:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    iput-boolean v0, p0, Lcom/vphonegaga/titan/user/User$Builder;->isVip:Z
+
+    .line 6
+    .line 7
+    iput-boolean v0, p0, Lcom/vphonegaga/titan/user/User$Builder;->enableAccAdvanceFeatures:Z
+
+    .line 8
+    .line 9
+    const-string v0, ""
+
+    .line 10
+    .line 11
+    iput-object v0, p0, Lcom/vphonegaga/titan/user/User$Builder;->token:Ljava/lang/String;
+
+    .line 12
+    .line 13
+    iput-object v0, p0, Lcom/vphonegaga/titan/user/User$Builder;->token2:Ljava/lang/String;
+
+    .line 14
+    .line 15
+    iput-object v0, p0, Lcom/vphonegaga/titan/user/User$Builder;->bindEmailAccount:Ljava/lang/String;
+
+    .line 16
+    .line 17
+    iput-object v0, p0, Lcom/vphonegaga/titan/user/User$Builder;->bindGoogleAccount:Ljava/lang/String;
+
+    .line 18
+    .line 19
+    iput-object v0, p0, Lcom/vphonegaga/titan/user/User$Builder;->email:Ljava/lang/String;
+
+    .line 20
+    .line 21
+    return-void
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+.end method
+
+.method public static bridge synthetic a(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User$Builder;->avatar:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public static bridge synthetic b(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User$Builder;->bindEmailAccount:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public static bridge synthetic c(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User$Builder;->bindGoogleAccount:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public static bridge synthetic d(Lcom/vphonegaga/titan/user/User$Builder;)I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lcom/vphonegaga/titan/user/User$Builder;->coinByShareNum:I
+
+    return p0
+.end method
+
+.method public static bridge synthetic e(Lcom/vphonegaga/titan/user/User$Builder;)I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lcom/vphonegaga/titan/user/User$Builder;->coinNum:I
+
+    return p0
+.end method
+
+.method public static bridge synthetic f(Lcom/vphonegaga/titan/user/User$Builder;)Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lcom/vphonegaga/titan/user/User$Builder;->enableAccAdvanceFeatures:Z
+
+    return p0
+.end method
+
+.method public static bridge synthetic g(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User$Builder;->encryptPhone:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public static bridge synthetic h(Lcom/vphonegaga/titan/user/User$Builder;)Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lcom/vphonegaga/titan/user/User$Builder;->isVip:Z
+
+    return p0
+.end method
+
+.method public static bridge synthetic i(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User$Builder;->login_type:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public static bridge synthetic j(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User$Builder;->nickname:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public static bridge synthetic k(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User$Builder;->phone:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public static bridge synthetic l(Lcom/vphonegaga/titan/user/User$Builder;)J
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lcom/vphonegaga/titan/user/User$Builder;->registerDate:J
+
+    return-wide v0
+.end method
+
+.method public static bridge synthetic m(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User$Builder;->shareCode:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public static bridge synthetic n(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User$Builder;->shareContext:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public static bridge synthetic o(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User$Builder;->shareImg:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public static bridge synthetic p(Lcom/vphonegaga/titan/user/User$Builder;)I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lcom/vphonegaga/titan/user/User$Builder;->shareNum:I
+
+    return p0
+.end method
+
+.method public static bridge synthetic q(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User$Builder;->shareTitle:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public static bridge synthetic r(Lcom/vphonegaga/titan/user/User$Builder;)I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lcom/vphonegaga/titan/user/User$Builder;->subscription:I
+
+    return p0
+.end method
+
+.method public static bridge synthetic s(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User$Builder;->token:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public static bridge synthetic t(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User$Builder;->token2:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public static bridge synthetic u(Lcom/vphonegaga/titan/user/User$Builder;)J
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lcom/vphonegaga/titan/user/User$Builder;->tokenExpireTime:J
+
+    return-wide v0
+.end method
+
+.method public static bridge synthetic v(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User$Builder;->uid:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public static bridge synthetic w(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User$Builder;->uuid:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public LoginType(Ljava/lang/String;)Lcom/vphonegaga/titan/user/User$Builder;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->login_type:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public avatar(Ljava/lang/String;)Lcom/vphonegaga/titan/user/User$Builder;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->avatar:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public bindEmailAccount(Ljava/lang/String;)Lcom/vphonegaga/titan/user/User$Builder;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->bindEmailAccount:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public bindGoogleAccount(Ljava/lang/String;)Lcom/vphonegaga/titan/user/User$Builder;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->bindGoogleAccount:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public build()Lcom/vphonegaga/titan/user/User;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lcom/vphonegaga/titan/user/User;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-direct {v0, p0, v1}, Lcom/vphonegaga/titan/user/User;-><init>(Lcom/vphonegaga/titan/user/User$Builder;Ldj1;)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-object v0
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public coinByShareNum(I)Lcom/vphonegaga/titan/user/User$Builder;
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->coinByShareNum:I
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public coinNum(I)Lcom/vphonegaga/titan/user/User$Builder;
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->coinNum:I
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public email(Ljava/lang/String;)Lcom/vphonegaga/titan/user/User$Builder;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->email:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public enableAccAdvanceFeatures(Z)Lcom/vphonegaga/titan/user/User$Builder;
+    .locals 0
+
+    .line 1
+    iput-boolean p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->enableAccAdvanceFeatures:Z
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public encryptPhone(Ljava/lang/String;)Lcom/vphonegaga/titan/user/User$Builder;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->encryptPhone:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public isVip(Z)Lcom/vphonegaga/titan/user/User$Builder;
+    .locals 0
+
+    .line 1
+    iput-boolean p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->isVip:Z
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public nickname(Ljava/lang/String;)Lcom/vphonegaga/titan/user/User$Builder;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->nickname:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public phone(Ljava/lang/String;)Lcom/vphonegaga/titan/user/User$Builder;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->phone:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public registerDate(J)Lcom/vphonegaga/titan/user/User$Builder;
+    .locals 0
+
+    .line 1
+    iput-wide p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->registerDate:J
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public shareCode(Ljava/lang/String;)Lcom/vphonegaga/titan/user/User$Builder;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->shareCode:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public shareContext(Ljava/lang/String;)Lcom/vphonegaga/titan/user/User$Builder;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->shareContext:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public shareImg(Ljava/lang/String;)Lcom/vphonegaga/titan/user/User$Builder;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->shareImg:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public shareNum(I)Lcom/vphonegaga/titan/user/User$Builder;
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->shareNum:I
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public shareTitle(Ljava/lang/String;)Lcom/vphonegaga/titan/user/User$Builder;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->shareTitle:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public subscription(I)Lcom/vphonegaga/titan/user/User$Builder;
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->subscription:I
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public token(Ljava/lang/String;)Lcom/vphonegaga/titan/user/User$Builder;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->token:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public token2(Ljava/lang/String;)Lcom/vphonegaga/titan/user/User$Builder;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->token2:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public tokenExpireTime(J)Lcom/vphonegaga/titan/user/User$Builder;
+    .locals 0
+
+    .line 1
+    iput-wide p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->tokenExpireTime:J
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public uid(Ljava/lang/String;)Lcom/vphonegaga/titan/user/User$Builder;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->uid:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-static {}, Lcom/common/utils/DeviceUtil$DeviceUuidFactory2;->getUuid()Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->uuid:Ljava/lang/String;
+
+    .line 8
+    .line 9
+    return-object p0
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method

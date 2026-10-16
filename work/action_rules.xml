@@ -1,0 +1,63 @@
+<root>
+	<rule type="background" name=".*" pkg=".*" isSystem="false" isRunning="false" isSameUid="false" caller="com\.android\.packageinstaller" importance=".*" blocked="false"/>
+	<rule type="background" name=".*" pkg=".*" isSystem=".*" isRunning="false" isSameUid="false" caller="com\.google\.android\.gms" importance=".*" blocked="false"/>
+	<rule type="background" name=".*" pkg=".*" isSystem=".*" isRunning="false" isSameUid="false" caller="com\.google\.android\.gsf\.login" importance=".*" blocked="false"/>
+	<rule type="background" name=".*" pkg=".*" isSystem="false" isRunning="false" isSameUid="false" caller="com\.tencent\.mobileqq" importance=".*" blocked="false"/>
+	<rule type="background" name=".*" pkg="com\.tencent\.qqpinyin" isSystem="false" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="false"/>
+	<rule type="background" name=".*" pkg="com\.sohu\.inputmethod\.sogou" isSystem="false" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="false"/>
+	<rule type="background" name=".*" pkg="com\.android\.vending" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance="400" blocked="true"/>
+	<rule type="background" name=".*" pkg="com\.google\.android\.gms" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance="400" blocked="true"/>
+	<rule type="background" name="com\.google\.process\.gapps" pkg=".*" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance="400" blocked="true"/>
+	<rule type="background" name="com\.google\.android\.play\.games\.ui" pkg=".*" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance="400" blocked="true"/>
+	<rule type="background" name=".*" pkg=".*" isSystem="false" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	
+	<rule type="broadcast" name="android\.appwidget\.action\..*" pkg=".*" isSystem=".*" isRunning=".*" isSameUid=".*" caller=".*" importance=".*" blocked="false"/>
+	
+	<rule type="broadcast" name="android\.intent\.action\.BOOT_COMPLETED" pkg="com\.android\.vending" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.intent\.action\.USER_PRESENT" pkg="com\.android\.vending" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.intent\.action\.DROPBOX_ENTRY_ADDED" pkg="com\.android\.vending" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.provider\.Contacts\.DATABASE_CREATED" pkg="com\.android\.vending" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.intent\.action\.SIM_STATE_CHANGED" pkg="com\.android\.vending" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.intent\.action\.TIME_SET" pkg="com\.android\.vending" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.intent\.action\.PACKAGE_.*" pkg="com\.android\.vending" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.net\.conn\.CONNECTIVITY_CHANGE" pkg="com\.android\.vending" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.location\.PROVIDERS_CHANGED" pkg="com\.android\.vending" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.location\.MODE_CHANGED" pkg="com\.android\.vending" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	
+	<rule type="broadcast" name="android\.intent\.action\.BOOT_COMPLETED" pkg="com\.google\.android\.gms" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.intent\.action\.USER_PRESENT" pkg="com\.google\.android\.gms" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.intent\.action\.DROPBOX_ENTRY_ADDED" pkg="com\.google\.android\.gms" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.provider\.Contacts\.DATABASE_CREATED" pkg="com\.google\.android\.gms" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.intent\.action\.SIM_STATE_CHANGED" pkg="com\.google\.android\.gms" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.intent\.action\.TIME_SET" pkg="com\.google\.android\.gms" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.intent\.action\.PACKAGE_.*" pkg="com\.google\.android\.gms" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.net\.conn\.CONNECTIVITY_CHANGE" pkg="com\.google\.android\.gms" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.location\.PROVIDERS_CHANGED" pkg="com\.google\.android\.gms" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.location\.MODE_CHANGED" pkg="com\.google\.android\.gms" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	
+	<rule type="broadcast" name="android\.intent\.action\.BOOT_COMPLETED" pkg="com\.google\.android\.gsf" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.intent\.action\.USER_PRESENT" pkg="com\.google\.android\.gsf" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.intent\.action\.DROPBOX_ENTRY_ADDED" pkg="com\.google\.android\.gsf" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.provider\.Contacts\.DATABASE_CREATED" pkg="com\.google\.android\.gsf" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.intent\.action\.SIM_STATE_CHANGED" pkg="com\.google\.android\.gsf" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.intent\.action\.TIME_SET" pkg="com\.google\.android\.gsf" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.intent\.action\.PACKAGE_.*" pkg="com\.google\.android\.gsf" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.net\.conn\.CONNECTIVITY_CHANGE" pkg="com\.google\.android\.gsf" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.location\.PROVIDERS_CHANGED" pkg="com\.google\.android\.gsf" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name="android\.location\.MODE_CHANGED" pkg="com\.google\.android\.gsf" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	
+	<rule type="broadcast" name="android\.intent\.action\.BOOT_COMPLETED" pkg="com\.google\.android\.play\.games" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	
+	<rule type="broadcast" name="android\.intent\.action\.BOOT_COMPLETED" pkg="com\.android\.superuser" isSystem="true" isRunning="false" isSameUid="true" caller=".*" importance=".*" blocked="true"/>
+	
+	<rule type="service" name="android\.content\.SyncAdapter" pkg="com\.google\.android\.gms" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="service" name="android\.content\.SyncAdapter" pkg="com\.google\.android\.gms" isSystem="true" isRunning="true" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="service" name="com\.google\.android\.gms\.ads\.identifier\.service\.START" pkg="com\.google\.android\.gms" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="service" name="com\.android\.media\.remotedisplay\.RemoteDisplayProvider" pkg="com\.google\.android\.gms" isSystem="true" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	
+	<rule type="service" name="android\.content\.SyncAdapter" pkg=".*" isSystem="false" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="service" name="android\.content\.SyncAdapter" pkg=".*" isSystem="false" isRunning="true" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="service" name="com\.android\.server\.job\.executeRunnableJob" pkg=".*" isSystem="false" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="provider" name=".*" pkg=".*" isSystem="false" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+	<rule type="broadcast" name=".*" pkg=".*" isSystem="false" isRunning="false" isSameUid="false" caller=".*" importance=".*" blocked="true"/>
+</root>

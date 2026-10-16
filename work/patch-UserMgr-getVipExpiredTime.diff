@@ -1,0 +1,63 @@
+--- ./work/orig-getVipExpiredTime.smali	2026-10-14 18:46:57.922580791 +0700
++++ ./work/patched-getVipExpiredTime.smali	2026-10-14 18:46:57.925580953 +0700
+@@ -1,7 +1,15 @@
+ .method public getVipExpiredTime()J
+-    .registers 4
++    .locals 3
+ 
+     .line 1
++    # PATCH vip-flags: force far-future expiry 0x7fffffff (2038-01-19, epoch seconds;
++    # callers x1000 -> ms). Was: 0 unless login+isVip+vipMaterial present.
++    const-wide/32 v0, 0x7fffffff
++
++    return-wide v0
++
++    # --- dead original body kept below for reference (unreachable) ---
++
+     invoke-virtual {p0}, Lcom/vphonegaga/titan/user/UserMgr;->isLogin()Z
+ 
+     .line 2
+@@ -14,7 +22,7 @@
+ 
+     .line 6
+     .line 7
+-    if-eqz v0, :cond_18
++    if-eqz v0, :cond_1
+ 
+     .line 8
+     .line 9
+@@ -26,7 +34,7 @@
+ 
+     .line 12
+     .line 13
+-    if-eqz v0, :cond_18
++    if-eqz v0, :cond_1
+ 
+     .line 14
+     .line 15
+@@ -34,14 +42,14 @@
+ 
+     .line 16
+     .line 17
+-    if-nez p0, :cond_13
++    if-nez p0, :cond_0
+ 
+     .line 18
+     .line 19
+     return-wide v1
+ 
+     .line 20
+-    :cond_13
++    :cond_0
+     invoke-virtual {p0}, Lcom/vphonegaga/titan/personalcenter/beans/MaterialBean$Material;->getExpired_time()J
+ 
+     .line 21
+@@ -53,7 +61,7 @@
+     return-wide v0
+ 
+     .line 25
+-    :cond_18
++    :cond_1
+     return-wide v1
+     .line 26
+     .line 27

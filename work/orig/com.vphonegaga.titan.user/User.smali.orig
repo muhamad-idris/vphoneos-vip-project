@@ -1,0 +1,2441 @@
+.class public Lcom/vphonegaga/titan/user/User;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/os/Parcelable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/vphonegaga/titan/user/User$Builder;
+    }
+.end annotation
+
+
+# static fields
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/os/Parcelable$Creator<",
+            "Lcom/vphonegaga/titan/user/User;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# instance fields
+.field public avatar:Ljava/lang/String;
+
+.field public bindEmailAccount:Ljava/lang/String;
+
+.field public bindGoogleAccount:Ljava/lang/String;
+
+.field public coinByShareNum:I
+
+.field public coinNum:I
+
+.field public email:Ljava/lang/String;
+
+.field public enableAccAdvanceFeatures:Z
+
+.field public encryptPhone:Ljava/lang/String;
+
+.field public isVip:Z
+
+.field public login_type:Ljava/lang/String;
+
+.field public nickname:Ljava/lang/String;
+
+.field public phone:Ljava/lang/String;
+
+.field public registerDate:J
+
+.field public shareCode:Ljava/lang/String;
+
+.field public shareContext:Ljava/lang/String;
+
+.field public shareImg:Ljava/lang/String;
+
+.field public shareNum:I
+
+.field public shareTitle:Ljava/lang/String;
+
+.field public subscription:I
+
+.field public token:Ljava/lang/String;
+
+.field public token2:Ljava/lang/String;
+
+.field public tokenExpireTime:J
+
+.field public uid:Ljava/lang/String;
+
+.field public uuid:Ljava/lang/String;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/vphonegaga/titan/user/User$1;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lcom/vphonegaga/titan/user/User$1;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lcom/vphonegaga/titan/user/User;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 7
+    .line 8
+    return-void
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method private constructor <init>()V
+    .locals 1
+
+    .line 166
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
+
+    .line 167
+    iput-boolean v0, p0, Lcom/vphonegaga/titan/user/User;->isVip:Z
+
+    .line 168
+    iput-boolean v0, p0, Lcom/vphonegaga/titan/user/User;->enableAccAdvanceFeatures:Z
+
+    .line 169
+    const-string v0, ""
+
+    iput-object v0, p0, Lcom/vphonegaga/titan/user/User;->bindEmailAccount:Ljava/lang/String;
+
+    .line 170
+    iput-object v0, p0, Lcom/vphonegaga/titan/user/User;->bindGoogleAccount:Ljava/lang/String;
+
+    .line 171
+    iput-object v0, p0, Lcom/vphonegaga/titan/user/User;->email:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/os/Parcel;)V
+    .locals 3
+
+    .line 173
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 174
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/vphonegaga/titan/user/User;->phone:Ljava/lang/String;
+
+    .line 175
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/vphonegaga/titan/user/User;->encryptPhone:Ljava/lang/String;
+
+    .line 176
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/vphonegaga/titan/user/User;->token:Ljava/lang/String;
+
+    .line 177
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/vphonegaga/titan/user/User;->token2:Ljava/lang/String;
+
+    .line 178
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/vphonegaga/titan/user/User;->avatar:Ljava/lang/String;
+
+    .line 179
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/vphonegaga/titan/user/User;->nickname:Ljava/lang/String;
+
+    .line 180
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/vphonegaga/titan/user/User;->uid:Ljava/lang/String;
+
+    .line 181
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/vphonegaga/titan/user/User;->uuid:Ljava/lang/String;
+
+    .line 182
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/vphonegaga/titan/user/User;->shareCode:Ljava/lang/String;
+
+    .line 183
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    move-result v0
+
+    iput v0, p0, Lcom/vphonegaga/titan/user/User;->coinNum:I
+
+    .line 184
+    invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
+
+    move-result-wide v0
+
+    iput-wide v0, p0, Lcom/vphonegaga/titan/user/User;->registerDate:J
+
+    .line 185
+    invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
+
+    move-result-wide v0
+
+    iput-wide v0, p0, Lcom/vphonegaga/titan/user/User;->tokenExpireTime:J
+
+    .line 186
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    move-result v0
+
+    iput v0, p0, Lcom/vphonegaga/titan/user/User;->coinByShareNum:I
+
+    .line 187
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    move-result v0
+
+    iput v0, p0, Lcom/vphonegaga/titan/user/User;->shareNum:I
+
+    .line 188
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/vphonegaga/titan/user/User;->shareTitle:Ljava/lang/String;
+
+    .line 189
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/vphonegaga/titan/user/User;->shareContext:Ljava/lang/String;
+
+    .line 190
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/vphonegaga/titan/user/User;->shareImg:Ljava/lang/String;
+
+    .line 191
+    invoke-virtual {p1}, Landroid/os/Parcel;->readByte()B
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    if-eqz v0, :cond_0
+
+    move v0, v2
+
+    goto :goto_0
+
+    :cond_0
+    move v0, v1
+
+    :goto_0
+    iput-boolean v0, p0, Lcom/vphonegaga/titan/user/User;->isVip:Z
+
+    .line 192
+    invoke-virtual {p1}, Landroid/os/Parcel;->readByte()B
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    move v1, v2
+
+    :cond_1
+    iput-boolean v1, p0, Lcom/vphonegaga/titan/user/User;->enableAccAdvanceFeatures:Z
+
+    .line 193
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    move-result v0
+
+    iput v0, p0, Lcom/vphonegaga/titan/user/User;->subscription:I
+
+    .line 194
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/vphonegaga/titan/user/User;->bindEmailAccount:Ljava/lang/String;
+
+    .line 195
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/vphonegaga/titan/user/User;->bindGoogleAccount:Ljava/lang/String;
+
+    .line 196
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/vphonegaga/titan/user/User;->email:Ljava/lang/String;
+
+    .line 197
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User;->login_type:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method private constructor <init>(Lcom/vphonegaga/titan/user/User$Builder;)V
+    .locals 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-static {p1}, Lcom/vphonegaga/titan/user/User$Builder;->k(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    invoke-virtual {p0, v0}, Lcom/vphonegaga/titan/user/User;->setPhone(Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-static {p1}, Lcom/vphonegaga/titan/user/User$Builder;->g(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    invoke-virtual {p0, v0}, Lcom/vphonegaga/titan/user/User;->setEncryptPhone(Ljava/lang/String;)V
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-static {p1}, Lcom/vphonegaga/titan/user/User$Builder;->s(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v0
+
+    .line 22
+    invoke-virtual {p0, v0}, Lcom/vphonegaga/titan/user/User;->setToken(Ljava/lang/String;)V
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-static {p1}, Lcom/vphonegaga/titan/user/User$Builder;->t(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v0
+
+    .line 29
+    invoke-virtual {p0, v0}, Lcom/vphonegaga/titan/user/User;->setToken2(Ljava/lang/String;)V
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-static {p1}, Lcom/vphonegaga/titan/user/User$Builder;->a(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v0
+
+    .line 36
+    invoke-virtual {p0, v0}, Lcom/vphonegaga/titan/user/User;->setAvatar(Ljava/lang/String;)V
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-static {p1}, Lcom/vphonegaga/titan/user/User$Builder;->j(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object v0
+
+    .line 43
+    invoke-virtual {p0, v0}, Lcom/vphonegaga/titan/user/User;->setNickname(Ljava/lang/String;)V
+
+    .line 44
+    .line 45
+    .line 46
+    invoke-static {p1}, Lcom/vphonegaga/titan/user/User$Builder;->v(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object v0
+
+    .line 50
+    invoke-virtual {p0, v0}, Lcom/vphonegaga/titan/user/User;->setUid(Ljava/lang/String;)V
+
+    .line 51
+    .line 52
+    .line 53
+    invoke-static {p1}, Lcom/vphonegaga/titan/user/User$Builder;->w(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object v0
+
+    .line 57
+    invoke-virtual {p0, v0}, Lcom/vphonegaga/titan/user/User;->setUuid(Ljava/lang/String;)V
+
+    .line 58
+    .line 59
+    .line 60
+    invoke-static {p1}, Lcom/vphonegaga/titan/user/User$Builder;->m(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v0
+
+    .line 64
+    invoke-virtual {p0, v0}, Lcom/vphonegaga/titan/user/User;->setShareCode(Ljava/lang/String;)V
+
+    .line 65
+    .line 66
+    .line 67
+    invoke-static {p1}, Lcom/vphonegaga/titan/user/User$Builder;->e(Lcom/vphonegaga/titan/user/User$Builder;)I
+
+    .line 68
+    .line 69
+    .line 70
+    move-result v0
+
+    .line 71
+    invoke-virtual {p0, v0}, Lcom/vphonegaga/titan/user/User;->setCoinNum(I)V
+
+    .line 72
+    .line 73
+    .line 74
+    invoke-static {p1}, Lcom/vphonegaga/titan/user/User$Builder;->l(Lcom/vphonegaga/titan/user/User$Builder;)J
+
+    .line 75
+    .line 76
+    .line 77
+    move-result-wide v0
+
+    .line 78
+    invoke-virtual {p0, v0, v1}, Lcom/vphonegaga/titan/user/User;->setRegisterDate(J)V
+
+    .line 79
+    .line 80
+    .line 81
+    invoke-static {p1}, Lcom/vphonegaga/titan/user/User$Builder;->u(Lcom/vphonegaga/titan/user/User$Builder;)J
+
+    .line 82
+    .line 83
+    .line 84
+    move-result-wide v0
+
+    .line 85
+    invoke-virtual {p0, v0, v1}, Lcom/vphonegaga/titan/user/User;->setTokenExpireTime(J)V
+
+    .line 86
+    .line 87
+    .line 88
+    invoke-static {p1}, Lcom/vphonegaga/titan/user/User$Builder;->d(Lcom/vphonegaga/titan/user/User$Builder;)I
+
+    .line 89
+    .line 90
+    .line 91
+    move-result v0
+
+    .line 92
+    invoke-virtual {p0, v0}, Lcom/vphonegaga/titan/user/User;->setCoinByShareNum(I)V
+
+    .line 93
+    .line 94
+    .line 95
+    invoke-static {p1}, Lcom/vphonegaga/titan/user/User$Builder;->p(Lcom/vphonegaga/titan/user/User$Builder;)I
+
+    .line 96
+    .line 97
+    .line 98
+    move-result v0
+
+    .line 99
+    invoke-virtual {p0, v0}, Lcom/vphonegaga/titan/user/User;->setShareNum(I)V
+
+    .line 100
+    .line 101
+    .line 102
+    invoke-static {p1}, Lcom/vphonegaga/titan/user/User$Builder;->q(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+
+    .line 103
+    .line 104
+    .line 105
+    move-result-object v0
+
+    .line 106
+    invoke-virtual {p0, v0}, Lcom/vphonegaga/titan/user/User;->setShareTitle(Ljava/lang/String;)V
+
+    .line 107
+    .line 108
+    .line 109
+    invoke-static {p1}, Lcom/vphonegaga/titan/user/User$Builder;->n(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+
+    .line 110
+    .line 111
+    .line 112
+    move-result-object v0
+
+    .line 113
+    invoke-virtual {p0, v0}, Lcom/vphonegaga/titan/user/User;->setShareContext(Ljava/lang/String;)V
+
+    .line 114
+    .line 115
+    .line 116
+    invoke-static {p1}, Lcom/vphonegaga/titan/user/User$Builder;->o(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+
+    .line 117
+    .line 118
+    .line 119
+    move-result-object v0
+
+    .line 120
+    invoke-virtual {p0, v0}, Lcom/vphonegaga/titan/user/User;->setShareImg(Ljava/lang/String;)V
+
+    .line 121
+    .line 122
+    .line 123
+    invoke-static {p1}, Lcom/vphonegaga/titan/user/User$Builder;->h(Lcom/vphonegaga/titan/user/User$Builder;)Z
+
+    .line 124
+    .line 125
+    .line 126
+    move-result v0
+
+    .line 127
+    invoke-virtual {p0, v0}, Lcom/vphonegaga/titan/user/User;->setVip(Z)V
+
+    .line 128
+    .line 129
+    .line 130
+    invoke-static {p1}, Lcom/vphonegaga/titan/user/User$Builder;->f(Lcom/vphonegaga/titan/user/User$Builder;)Z
+
+    .line 131
+    .line 132
+    .line 133
+    move-result v0
+
+    .line 134
+    invoke-virtual {p0, v0}, Lcom/vphonegaga/titan/user/User;->setEnableAccAdvanceFeatures(Z)V
+
+    .line 135
+    .line 136
+    .line 137
+    invoke-static {p1}, Lcom/vphonegaga/titan/user/User$Builder;->r(Lcom/vphonegaga/titan/user/User$Builder;)I
+
+    .line 138
+    .line 139
+    .line 140
+    move-result v0
+
+    .line 141
+    invoke-virtual {p0, v0}, Lcom/vphonegaga/titan/user/User;->setSubscription(I)V
+
+    .line 142
+    .line 143
+    .line 144
+    invoke-static {p1}, Lcom/vphonegaga/titan/user/User$Builder;->b(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+
+    .line 145
+    .line 146
+    .line 147
+    move-result-object v0
+
+    .line 148
+    invoke-virtual {p0, v0}, Lcom/vphonegaga/titan/user/User;->setBindEmailAccount(Ljava/lang/String;)V
+
+    .line 149
+    .line 150
+    .line 151
+    invoke-static {p1}, Lcom/vphonegaga/titan/user/User$Builder;->c(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+
+    .line 152
+    .line 153
+    .line 154
+    move-result-object v0
+
+    .line 155
+    invoke-virtual {p0, v0}, Lcom/vphonegaga/titan/user/User;->setBindGoogleAccount(Ljava/lang/String;)V
+
+    .line 156
+    .line 157
+    .line 158
+    invoke-static {p1}, Lcom/vphonegaga/titan/user/User$Builder;->i(Lcom/vphonegaga/titan/user/User$Builder;)Ljava/lang/String;
+
+    .line 159
+    .line 160
+    .line 161
+    move-result-object p1
+
+    .line 162
+    invoke-virtual {p0, p1}, Lcom/vphonegaga/titan/user/User;->setLogin_type(Ljava/lang/String;)V
+
+    .line 163
+    .line 164
+    .line 165
+    return-void
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
+    .line 186
+    .line 187
+    .line 188
+    .line 189
+    .line 190
+    .line 191
+    .line 192
+    .line 193
+    .line 194
+    .line 195
+    .line 196
+    .line 197
+    .line 198
+    .line 199
+    .line 200
+    .line 201
+    .line 202
+    .line 203
+    .line 204
+    .line 205
+.end method
+
+.method public synthetic constructor <init>(Lcom/vphonegaga/titan/user/User$Builder;Ldj1;)V
+    .locals 0
+
+    .line 172
+    invoke-direct {p0, p1}, Lcom/vphonegaga/titan/user/User;-><init>(Lcom/vphonegaga/titan/user/User$Builder;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public describeContents()I
+    .locals 0
+
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public getAvatar()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User;->avatar:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public getBindEmailAccount()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User;->bindEmailAccount:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public getBindGoogleAccount()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User;->bindGoogleAccount:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public getCoinByShareNum()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lcom/vphonegaga/titan/user/User;->coinByShareNum:I
+
+    .line 2
+    .line 3
+    return p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public getCoinNum()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lcom/vphonegaga/titan/user/User;->coinNum:I
+
+    .line 2
+    .line 3
+    return p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public getEncryptPhone()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User;->encryptPhone:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public getLogin_type()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User;->login_type:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public getNickname()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User;->nickname:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public getPersonalEmail()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User;->email:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public getPhone()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User;->phone:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public getRegisterDate()J
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lcom/vphonegaga/titan/user/User;->registerDate:J
+
+    .line 2
+    .line 3
+    return-wide v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public getShareCode()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User;->shareCode:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public getShareContext()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User;->shareContext:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public getShareImg()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User;->shareImg:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public getShareNum()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lcom/vphonegaga/titan/user/User;->shareNum:I
+
+    .line 2
+    .line 3
+    return p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public getShareTitle()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User;->shareTitle:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public getSubscription()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lcom/vphonegaga/titan/user/User;->subscription:I
+
+    .line 2
+    .line 3
+    return p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public getToken()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User;->token:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public getToken2()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User;->token2:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public getTokenExpireTime()J
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lcom/vphonegaga/titan/user/User;->tokenExpireTime:J
+
+    .line 2
+    .line 3
+    return-wide v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public getUid()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User;->uid:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public getUuid()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User;->uuid:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public isEnableAccAdvanceFeatures()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lcom/vphonegaga/titan/user/User;->enableAccAdvanceFeatures:Z
+
+    .line 2
+    .line 3
+    return p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public isVip()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lcom/vphonegaga/titan/user/User;->isVip:Z
+
+    .line 2
+    .line 3
+    return p0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+.end method
+
+.method public setAvatar(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User;->avatar:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setBindEmailAccount(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User;->bindEmailAccount:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setBindGoogleAccount(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User;->bindGoogleAccount:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setCoinByShareNum(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/vphonegaga/titan/user/User;->coinByShareNum:I
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setCoinNum(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/vphonegaga/titan/user/User;->coinNum:I
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setEnableAccAdvanceFeatures(Z)V
+    .locals 0
+
+    .line 1
+    iput-boolean p1, p0, Lcom/vphonegaga/titan/user/User;->enableAccAdvanceFeatures:Z
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setEncryptPhone(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User;->encryptPhone:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setLogin_type(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User;->login_type:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setNickname(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User;->nickname:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setPersonalEmail(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User;->email:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setPhone(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User;->phone:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setRegisterDate(J)V
+    .locals 0
+
+    .line 1
+    iput-wide p1, p0, Lcom/vphonegaga/titan/user/User;->registerDate:J
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setShareCode(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User;->shareCode:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setShareContext(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User;->shareContext:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setShareImg(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User;->shareImg:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setShareNum(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/vphonegaga/titan/user/User;->shareNum:I
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setShareTitle(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User;->shareTitle:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setSubscription(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/vphonegaga/titan/user/User;->subscription:I
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setToken(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User;->token:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setToken2(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User;->token2:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setTokenExpireTime(J)V
+    .locals 0
+
+    .line 1
+    iput-wide p1, p0, Lcom/vphonegaga/titan/user/User;->tokenExpireTime:J
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setUid(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User;->uid:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setUuid(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/vphonegaga/titan/user/User;->uuid:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public setVip(Z)V
+    .locals 0
+
+    .line 1
+    iput-boolean p1, p0, Lcom/vphonegaga/titan/user/User;->isVip:Z
+
+    .line 2
+    .line 3
+    return-void
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+.end method
+
+.method public writeToParcel(Landroid/os/Parcel;I)V
+    .locals 2
+
+    .line 1
+    iget-object p2, p0, Lcom/vphonegaga/titan/user/User;->phone:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object p2, p0, Lcom/vphonegaga/titan/user/User;->encryptPhone:Ljava/lang/String;
+
+    .line 7
+    .line 8
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    iget-object p2, p0, Lcom/vphonegaga/titan/user/User;->token:Ljava/lang/String;
+
+    .line 12
+    .line 13
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 14
+    .line 15
+    .line 16
+    iget-object p2, p0, Lcom/vphonegaga/titan/user/User;->token2:Ljava/lang/String;
+
+    .line 17
+    .line 18
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 19
+    .line 20
+    .line 21
+    iget-object p2, p0, Lcom/vphonegaga/titan/user/User;->avatar:Ljava/lang/String;
+
+    .line 22
+    .line 23
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 24
+    .line 25
+    .line 26
+    iget-object p2, p0, Lcom/vphonegaga/titan/user/User;->nickname:Ljava/lang/String;
+
+    .line 27
+    .line 28
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 29
+    .line 30
+    .line 31
+    iget-object p2, p0, Lcom/vphonegaga/titan/user/User;->uid:Ljava/lang/String;
+
+    .line 32
+    .line 33
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 34
+    .line 35
+    .line 36
+    iget-object p2, p0, Lcom/vphonegaga/titan/user/User;->uuid:Ljava/lang/String;
+
+    .line 37
+    .line 38
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 39
+    .line 40
+    .line 41
+    iget-object p2, p0, Lcom/vphonegaga/titan/user/User;->shareCode:Ljava/lang/String;
+
+    .line 42
+    .line 43
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 44
+    .line 45
+    .line 46
+    iget p2, p0, Lcom/vphonegaga/titan/user/User;->coinNum:I
+
+    .line 47
+    .line 48
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 49
+    .line 50
+    .line 51
+    iget-wide v0, p0, Lcom/vphonegaga/titan/user/User;->registerDate:J
+
+    .line 52
+    .line 53
+    invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
+
+    .line 54
+    .line 55
+    .line 56
+    iget-wide v0, p0, Lcom/vphonegaga/titan/user/User;->tokenExpireTime:J
+
+    .line 57
+    .line 58
+    invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
+
+    .line 59
+    .line 60
+    .line 61
+    iget p2, p0, Lcom/vphonegaga/titan/user/User;->coinByShareNum:I
+
+    .line 62
+    .line 63
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 64
+    .line 65
+    .line 66
+    iget p2, p0, Lcom/vphonegaga/titan/user/User;->shareNum:I
+
+    .line 67
+    .line 68
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 69
+    .line 70
+    .line 71
+    iget-object p2, p0, Lcom/vphonegaga/titan/user/User;->shareTitle:Ljava/lang/String;
+
+    .line 72
+    .line 73
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 74
+    .line 75
+    .line 76
+    iget-object p2, p0, Lcom/vphonegaga/titan/user/User;->shareContext:Ljava/lang/String;
+
+    .line 77
+    .line 78
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 79
+    .line 80
+    .line 81
+    iget-object p2, p0, Lcom/vphonegaga/titan/user/User;->shareImg:Ljava/lang/String;
+
+    .line 82
+    .line 83
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 84
+    .line 85
+    .line 86
+    iget-boolean p2, p0, Lcom/vphonegaga/titan/user/User;->isVip:Z
+
+    .line 87
+    .line 88
+    int-to-byte p2, p2
+
+    .line 89
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeByte(B)V
+
+    .line 90
+    .line 91
+    .line 92
+    iget-boolean p2, p0, Lcom/vphonegaga/titan/user/User;->enableAccAdvanceFeatures:Z
+
+    .line 93
+    .line 94
+    int-to-byte p2, p2
+
+    .line 95
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeByte(B)V
+
+    .line 96
+    .line 97
+    .line 98
+    iget p2, p0, Lcom/vphonegaga/titan/user/User;->subscription:I
+
+    .line 99
+    .line 100
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 101
+    .line 102
+    .line 103
+    iget-object p2, p0, Lcom/vphonegaga/titan/user/User;->bindEmailAccount:Ljava/lang/String;
+
+    .line 104
+    .line 105
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 106
+    .line 107
+    .line 108
+    iget-object p2, p0, Lcom/vphonegaga/titan/user/User;->bindGoogleAccount:Ljava/lang/String;
+
+    .line 109
+    .line 110
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 111
+    .line 112
+    .line 113
+    iget-object p2, p0, Lcom/vphonegaga/titan/user/User;->email:Ljava/lang/String;
+
+    .line 114
+    .line 115
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 116
+    .line 117
+    .line 118
+    iget-object p0, p0, Lcom/vphonegaga/titan/user/User;->login_type:Ljava/lang/String;
+
+    .line 119
+    .line 120
+    invoke-virtual {p1, p0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 121
+    .line 122
+    .line 123
+    return-void
+    .line 124
+    .line 125
+    .line 126
+    .line 127
+    .line 128
+    .line 129
+    .line 130
+    .line 131
+    .line 132
+    .line 133
+    .line 134
+    .line 135
+    .line 136
+    .line 137
+    .line 138
+    .line 139
+    .line 140
+    .line 141
+    .line 142
+    .line 143
+    .line 144
+    .line 145
+    .line 146
+    .line 147
+    .line 148
+    .line 149
+    .line 150
+    .line 151
+    .line 152
+    .line 153
+    .line 154
+    .line 155
+    .line 156
+    .line 157
+    .line 158
+    .line 159
+    .line 160
+    .line 161
+    .line 162
+    .line 163
+    .line 164
+    .line 165
+    .line 166
+    .line 167
+    .line 168
+    .line 169
+    .line 170
+    .line 171
+    .line 172
+    .line 173
+    .line 174
+    .line 175
+    .line 176
+    .line 177
+    .line 178
+    .line 179
+    .line 180
+    .line 181
+    .line 182
+    .line 183
+    .line 184
+    .line 185
+    .line 186
+    .line 187
+    .line 188
+    .line 189
+    .line 190
+    .line 191
+    .line 192
+    .line 193
+    .line 194
+    .line 195
+    .line 196
+    .line 197
+    .line 198
+    .line 199
+    .line 200
+    .line 201
+    .line 202
+    .line 203
+    .line 204
+    .line 205
+    .line 206
+    .line 207
+    .line 208
+    .line 209
+    .line 210
+    .line 211
+    .line 212
+    .line 213
+    .line 214
+    .line 215
+    .line 216
+.end method

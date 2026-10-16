@@ -1,0 +1,9 @@
+# APK & build artifacts (too big for GitHub, regenerable)
+/com.vphoneos.titan_arm64_5.1.8.apk
+/work/*.apk
+/work/*.idsig
+/work/apktool-out/
+/work/apktool-orig/
+/work/dex/
+/work/native/
+/work/rom*/

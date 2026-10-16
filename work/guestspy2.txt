@@ -1,0 +1,118 @@
+     ____
+    / _  |   Frida 17.18.0 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   Prefer a GUI? Luma is the official Frida app, with a live REPL,
+   . . . .   persistent sessions & collaboration. https://luma.frida.re/
+   . . . .
+   . . . .   Connected to Z2469N (id=YFZ2469IDAD1000242)
+Attaching...
+[gs] polling every 15s, Ctrl+C to stop
+[gs] --- scan init0 t=1792070433477
+[gs] guest pids: (none)
+[Z2469N::Gadget ]-> [gs] --- scan t1 t=1792070448499
+[gs] guest pids: 25277,25319,25327
+[gs] 25277 status=Name:libloader64.so|Umask:0077|State:S (sleeping)|Tgid:25277|Ngid:0|Pid:25277|PPid:25110|TracerPid:0|Uid:105991059910599
+[gs] 25277 wchan=futex_wait_queue
+[gs] 25277 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] 25319 status=Name:libloader64.so|Umask:0077|State:S (sleeping)|Tgid:25319|Ngid:0|Pid:25319|PPid:25277|TracerPid:0|Uid:105991059910599
+[gs] 25319 wchan=do_epoll_wait
+[gs] 25319 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] 25327 status=Name:init|Umask:0077|State:S (sleeping)|Tgid:25327|Ngid:0|Pid:25327|PPid:25277|TracerPid:0|Uid:10599105991059910599|Gid:
+[gs] 25327 wchan=futex_wait_queue
+[gs] 25327 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] --- scan t2 t=1792070463514
+[gs] guest pids: 25277,25319,25327
+[gs] 25277 status=Name:libloader64.so|Umask:0077|State:S (sleeping)|Tgid:25277|Ngid:0|Pid:25277|PPid:25110|TracerPid:0|Uid:105991059910599
+[gs] 25277 wchan=futex_wait_queue
+[gs] 25277 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] 25319 status=Name:libloader64.so|Umask:0077|State:S (sleeping)|Tgid:25319|Ngid:0|Pid:25319|PPid:25277|TracerPid:0|Uid:105991059910599
+[gs] 25319 wchan=do_epoll_wait
+[gs] 25319 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] 25327 status=Name:init|Umask:0077|State:S (sleeping)|Tgid:25327|Ngid:0|Pid:25327|PPid:25277|TracerPid:0|Uid:10599105991059910599|Gid:
+[gs] 25327 wchan=futex_wait_queue
+[gs] 25327 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] --- scan t3 t=1792070478530
+[gs] guest pids: 25277,25319,25327
+[gs] 25277 status=Name:libloader64.so|Umask:0077|State:S (sleeping)|Tgid:25277|Ngid:0|Pid:25277|PPid:25110|TracerPid:0|Uid:105991059910599
+[gs] 25277 wchan=futex_wait_queue
+[gs] 25277 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] 25319 status=Name:libloader64.so|Umask:0077|State:S (sleeping)|Tgid:25319|Ngid:0|Pid:25319|PPid:25277|TracerPid:0|Uid:105991059910599
+[gs] 25319 wchan=do_epoll_wait
+[gs] 25319 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] 25327 status=Name:init|Umask:0077|State:S (sleeping)|Tgid:25327|Ngid:0|Pid:25327|PPid:25277|TracerPid:0|Uid:10599105991059910599|Gid:
+[gs] 25327 wchan=futex_wait_queue
+[gs] 25327 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] --- scan t4 t=1792070493546
+[gs] guest pids: 25277,25319,25327
+[gs] 25277 status=Name:libloader64.so|Umask:0077|State:S (sleeping)|Tgid:25277|Ngid:0|Pid:25277|PPid:25110|TracerPid:0|Uid:105991059910599
+[gs] 25277 wchan=futex_wait_queue
+[gs] 25277 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] 25319 status=Name:libloader64.so|Umask:0077|State:S (sleeping)|Tgid:25319|Ngid:0|Pid:25319|PPid:25277|TracerPid:0|Uid:105991059910599
+[gs] 25319 wchan=do_epoll_wait
+[gs] 25319 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] 25327 status=Name:init|Umask:0077|State:S (sleeping)|Tgid:25327|Ngid:0|Pid:25327|PPid:25277|TracerPid:0|Uid:10599105991059910599|Gid:
+[gs] 25327 wchan=futex_wait_queue
+[gs] 25327 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] --- scan t5 t=1792070508561
+[gs] guest pids: 25277,25319,25327
+[gs] 25277 status=Name:libloader64.so|Umask:0077|State:S (sleeping)|Tgid:25277|Ngid:0|Pid:25277|PPid:25110|TracerPid:0|Uid:105991059910599
+[gs] 25277 wchan=futex_wait_queue
+[gs] 25277 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] 25319 status=Name:libloader64.so|Umask:0077|State:S (sleeping)|Tgid:25319|Ngid:0|Pid:25319|PPid:25277|TracerPid:0|Uid:105991059910599
+[gs] 25319 wchan=do_epoll_wait
+[gs] 25319 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] 25327 status=Name:init|Umask:0077|State:S (sleeping)|Tgid:25327|Ngid:0|Pid:25327|PPid:25277|TracerPid:0|Uid:10599105991059910599|Gid:
+[gs] 25327 wchan=futex_wait_queue
+[gs] 25327 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] --- scan t6 t=1792070523576
+[gs] guest pids: 25277,25319,25327
+[gs] 25277 status=Name:libloader64.so|Umask:0077|State:S (sleeping)|Tgid:25277|Ngid:0|Pid:25277|PPid:25110|TracerPid:0|Uid:105991059910599
+[gs] 25277 wchan=futex_wait_queue
+[gs] 25277 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] 25319 status=Name:libloader64.so|Umask:0077|State:S (sleeping)|Tgid:25319|Ngid:0|Pid:25319|PPid:25277|TracerPid:0|Uid:105991059910599
+[gs] 25319 wchan=do_epoll_wait
+[gs] 25319 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] 25327 status=Name:init|Umask:0077|State:S (sleeping)|Tgid:25327|Ngid:0|Pid:25327|PPid:25277|TracerPid:0|Uid:10599105991059910599|Gid:
+[gs] 25327 wchan=futex_wait_queue
+[gs] 25327 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] --- scan t7 t=1792070538592
+[gs] guest pids: 25277,25319,25327
+[gs] 25277 status=Name:libloader64.so|Umask:0077|State:S (sleeping)|Tgid:25277|Ngid:0|Pid:25277|PPid:25110|TracerPid:0|Uid:105991059910599
+[gs] 25277 wchan=futex_wait_queue
+[gs] 25277 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] 25319 status=Name:libloader64.so|Umask:0077|State:S (sleeping)|Tgid:25319|Ngid:0|Pid:25319|PPid:25277|TracerPid:0|Uid:105991059910599
+[gs] 25319 wchan=do_epoll_wait
+[gs] 25319 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] 25327 status=Name:init|Umask:0077|State:S (sleeping)|Tgid:25327|Ngid:0|Pid:25327|PPid:25277|TracerPid:0|Uid:10599105991059910599|Gid:
+[gs] 25327 wchan=futex_wait_queue
+[gs] 25327 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] --- scan t8 t=1792070553607
+[gs] guest pids: 25277,25319,25327
+[gs] 25277 status=Name:libloader64.so|Umask:0077|State:S (sleeping)|Tgid:25277|Ngid:0|Pid:25277|PPid:25110|TracerPid:0|Uid:105991059910599
+[gs] 25277 wchan=futex_wait_queue
+[gs] 25277 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] 25319 status=Name:libloader64.so|Umask:0077|State:S (sleeping)|Tgid:25319|Ngid:0|Pid:25319|PPid:25277|TracerPid:0|Uid:105991059910599
+[gs] 25319 wchan=do_epoll_wait
+[gs] 25319 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] 25327 status=Name:init|Umask:0077|State:S (sleeping)|Tgid:25327|Ngid:0|Pid:25327|PPid:25277|TracerPid:0|Uid:10599105991059910599|Gid:
+[gs] 25327 wchan=futex_wait_queue
+[gs] 25327 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] --- scan t9 t=1792070568622
+[gs] guest pids: 25277,25319,25327
+[gs] 25277 status=Name:libloader64.so|Umask:0077|State:S (sleeping)|Tgid:25277|Ngid:0|Pid:25277|PPid:25110|TracerPid:0|Uid:105991059910599
+[gs] 25277 wchan=futex_wait_queue
+[gs] 25277 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] 25319 status=Name:libloader64.so|Umask:0077|State:S (sleeping)|Tgid:25319|Ngid:0|Pid:25319|PPid:25277|TracerPid:0|Uid:105991059910599
+[gs] 25319 wchan=do_epoll_wait
+[gs] 25319 stack=ERR:Error: java.io.IOException: Permission denied
+[gs] 25327 status=Name:init|Umask:0077|State:S (sleeping)|Tgid:25327|Ngid:0|Pid:25327|PPid:25277|TracerPid:0|Uid:10599105991059910599|Gid:
+[gs] 25327 wchan=futex_wait_queue
+[gs] 25327 stack=ERR:Error: java.io.IOException: Permission denied
+Connection terminated
+
+Thank you for using Frida!

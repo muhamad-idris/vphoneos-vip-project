@@ -1,0 +1,134 @@
+--- ./work/orig/com.vphonegaga.titan.user/User.smali.orig	2026-10-14 18:29:49.092471180 +0700
++++ ./work/apktool-out/smali_classes3/com/vphonegaga/titan/user/User.smali	2026-10-14 18:44:46.791953421 +0700
+@@ -122,6 +122,14 @@
+     .line 168
+     iput-boolean v0, p0, Lcom/vphonegaga/titan/user/User;->enableAccAdvanceFeatures:Z
+ 
++    # PATCH isVip=true: override default ctor VIP to true (keep enableAccAdvanceFeatures false)
++    const/4 v0, 0x1
++
++    iput-boolean v0, p0, Lcom/vphonegaga/titan/user/User;->isVip:Z
++
++    # PATCH vip-flags: override default ctor advance-features to true
++    iput-boolean v0, p0, Lcom/vphonegaga/titan/user/User;->enableAccAdvanceFeatures:Z
++
+     .line 169
+     const-string v0, ""
+ 
+@@ -280,6 +288,9 @@
+     move v0, v1
+ 
+     :goto_0
++    # PATCH isVip=true: force parcel-loaded VIP true (was: parcel byte value)
++    const/4 v0, 0x1
++
+     iput-boolean v0, p0, Lcom/vphonegaga/titan/user/User;->isVip:Z
+ 
+     .line 192
+@@ -292,6 +303,9 @@
+     move v1, v2
+ 
+     :cond_1
++    # PATCH vip-flags: force parcel-loaded advance-features true (was: parcel byte value)
++    const/4 v1, 0x1
++
+     iput-boolean v1, p0, Lcom/vphonegaga/titan/user/User;->enableAccAdvanceFeatures:Z
+ 
+     .line 193
+@@ -299,6 +313,9 @@
+ 
+     move-result v0
+ 
++    # PATCH vip-flags: force parcel-loaded subscription=1 (subscribed UI branch)
++    const/4 v0, 0x1
++
+     iput v0, p0, Lcom/vphonegaga/titan/user/User;->subscription:I
+ 
+     .line 194
+@@ -1135,14 +1152,15 @@
+ .end method
+ 
+ .method public getSubscription()I
+-    .locals 0
++    .locals 1
+ 
+     .line 1
+-    iget p0, p0, Lcom/vphonegaga/titan/user/User;->subscription:I
++    # PATCH vip-flags: force subscribed (>0 shows VIP UI branch, was: iget field)
++    const/4 v0, 0x1
+ 
+     .line 2
+     .line 3
+-    return p0
++    return v0
+     .line 4
+     .line 5
+     .line 6
+@@ -1297,14 +1315,15 @@
+ .end method
+ 
+ .method public isEnableAccAdvanceFeatures()Z
+-    .locals 0
++    .locals 1
+ 
+     .line 1
+-    iget-boolean p0, p0, Lcom/vphonegaga/titan/user/User;->enableAccAdvanceFeatures:Z
++    # PATCH vip-flags: force advance-features on (was: iget field; return p0)
++    const/4 v0, 0x1
+ 
+     .line 2
+     .line 3
+-    return p0
++    return v0
+     .line 4
+     .line 5
+     .line 6
+@@ -1324,14 +1343,15 @@
+ .end method
+ 
+ .method public isVip()Z
+-    .locals 0
++    .locals 1
+ 
+     .line 1
+-    iget-boolean p0, p0, Lcom/vphonegaga/titan/user/User;->isVip:Z
++    # PATCH isVip=true: force VIP on (was: iget-boolean p0, p0, ...->isVip:Z; return p0)
++    const/4 v0, 0x1
+ 
+     .line 2
+     .line 3
+-    return p0
++    return v0
+     .line 4
+     .line 5
+     .line 6
+@@ -1514,6 +1534,9 @@
+     .locals 0
+ 
+     .line 1
++    # PATCH vip-flags: ignore input, force field true
++    const/4 p1, 0x1
++
+     iput-boolean p1, p0, Lcom/vphonegaga/titan/user/User;->enableAccAdvanceFeatures:Z
+ 
+     .line 2
+@@ -1898,6 +1921,9 @@
+     .locals 0
+ 
+     .line 1
++    # PATCH vip-flags: ignore input, force subscribed
++    const/4 p1, 0x1
++
+     iput p1, p0, Lcom/vphonegaga/titan/user/User;->subscription:I
+ 
+     .line 2
+@@ -2090,6 +2116,9 @@
+     .locals 0
+ 
+     .line 1
++    # PATCH isVip=true: ignore input, force field true
++    const/4 p1, 0x1
++
+     iput-boolean p1, p0, Lcom/vphonegaga/titan/user/User;->isVip:Z
+ 
+     .line 2

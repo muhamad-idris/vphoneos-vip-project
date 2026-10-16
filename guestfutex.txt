@@ -1,0 +1,2 @@
+usage: frida [options] target
+frida: error: [Errno 2] No such file or directory: '/home/tamsis/vphoneos_patch/frida-guestfutex.js'

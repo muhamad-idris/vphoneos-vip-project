@@ -1,0 +1,283 @@
+     ____
+    / _  |   Frida 17.18.0 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   Prefer a GUI? Luma is the official Frida app, with a live REPL,
+   . . . .   persistent sessions & collaboration. https://luma.frida.re/
+   . . . .
+   . . . .   Connected to Z2469N (id=YFZ2469IDAD1000242)
+Attaching...                                                            
+[hang] base=0x7439202000
+[hang] threads=47
+[hang] --- tid=22913 (titan:instance1)
+[hang]   #0 0x752fdd4698!libopenjdk.so startChild+0x2c
+[hang]   #1 0x752fdd4698!libopenjdk.so startChild+0x2c
+[hang]   #2 0x752fdd4698!libopenjdk.so startChild+0x2c
+[hang] --- tid=22914 (Signal Catcher)
+[hang]   #0 0x7814f05d74!libc.so sigwaitinfo64+0x44
+[hang]   #1 0x7814f05d74!libc.so sigwaitinfo64+0x44
+[hang]   #2 0x756473f494!libart.so _ZN3art13SignalCatcher13WaitForSignalEPNS_6ThreadERNS_9SignalSetEP7siginfo+0x7c
+[hang]   #3 0x756473f494!libart.so _ZN3art13SignalCatcher13WaitForSignalEPNS_6ThreadERNS_9SignalSetEP7siginfo+0x7c
+[hang] --- tid=22915 (perfetto_hprof_)
+[hang]   #0 0x7535a455c4!libperfetto_hprof.so _ZNSt3__114__thread_proxyB8nn220000INS_5tupleIJNS_10unique_ptrINS_15__thread_str
+[hang]   #1 0x7535a455c4!libperfetto_hprof.so _ZNSt3__114__thread_proxyB8nn220000INS_5tupleIJNS_10unique_ptrINS_15__thread_str
+[hang] --- tid=22916 (Jit thread pool)
+[hang]   #0 0x756440ef38!libart.so _ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+0x90
+[hang]   #1 0x756440ef38!libart.so _ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+0x90
+[hang]   #2 0x756440ef38!libart.so _ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+0x90
+[hang] --- tid=22917 (HeapTaskDaemon)
+[hang]   #0 0x7564556f88!libart.so _ZN3art17ConditionVariable9TimedWaitEPNS_6ThreadEli+0x12c
+[hang]   #1 0x7564556f88!libart.so _ZN3art17ConditionVariable9TimedWaitEPNS_6ThreadEli+0x12c
+[hang]   #2 0x7564556f88!libart.so _ZN3art17ConditionVariable9TimedWaitEPNS_6ThreadEli+0x12c
+[hang] --- tid=22918 (ReferenceQueueD)
+[hang]   #0 0x756440ef38!libart.so _ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+0x90
+[hang]   #1 0x756440ef38!libart.so _ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+0x90
+[hang]   #2 0x756440ef38!libart.so _ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+0x90
+[hang] --- tid=22919 (FinalizerDaemon)
+[hang]   #0 0x756440ef38!libart.so _ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+0x90
+[hang]   #1 0x756440ef38!libart.so _ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+0x90
+[hang]   #2 0x756440ef38!libart.so _ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+0x90
+[hang] --- tid=22920 (FinalizerWatchd)
+[hang]   #0 0x756440ef38!libart.so _ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+0x90
+[hang]   #1 0x756440ef38!libart.so _ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+0x90
+[hang]   #2 0x756440ef38!libart.so _ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+0x90
+[hang] --- tid=22921 (binder:22913_1)
+[hang]   #0 0x7814efabe0!libc.so ioctl+0xa0
+[hang]   #1 0x7814efabe0!libc.so ioctl+0xa0
+[hang]   #2 0x780fd6c82c!libbinder.so _ZN7android14IPCThreadState14joinThreadPoolEb+0x10c
+[hang]   #3 0x780fd7589c!libbinder.so _ZN7android10PoolThread10threadLoopEv+0x1c
+[hang]   #4 0x7801162c94!libutils.so _ZN7android6Thread11_threadLoopEPv+0x174
+[hang]   #5 0x7809172a80!libandroid_runtime.so _ZN7android14AndroidRuntime15javaThreadShellEPv+0x90
+[hang]   #6 0x7814f000dc!libc.so _ZL15__pthread_startPv+0xcc
+[hang]   #7 0x7814ef1414!libc.so __start_thread+0x44
+[hang] --- tid=22922 (binder:22913_2)
+[hang]   #0 0x7814efabe0!libc.so ioctl+0xa0
+[hang]   #1 0x7814efabe0!libc.so ioctl+0xa0
+[hang]   #2 0x780fd6c82c!libbinder.so _ZN7android14IPCThreadState14joinThreadPoolEb+0x10c
+[hang]   #3 0x780fd7589c!libbinder.so _ZN7android10PoolThread10threadLoopEv+0x1c
+[hang]   #4 0x7801162c94!libutils.so _ZN7android6Thread11_threadLoopEPv+0x174
+[hang]   #5 0x7809172a80!libandroid_runtime.so _ZN7android14AndroidRuntime15javaThreadShellEPv+0x90
+[hang]   #6 0x7814f000dc!libc.so _ZL15__pthread_startPv+0xcc
+[hang]   #7 0x7814ef1414!libc.so __start_thread+0x44
+[hang] --- tid=22923 (jank)
+[hang]   #0 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #1 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #2 0x7809211270!libandroid_runtime.so _ZN7androidL38android_os_MessageQueue_nativePollOnceEP7_JNIEnvP8_jobjectli+0x30
+[hang]   #3 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang]   #4 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang] --- tid=22924 (binder:22913_3)
+[hang]   #0 0x7814efabe0!libc.so ioctl+0xa0
+[hang]   #1 0x7814efabe0!libc.so ioctl+0xa0
+[hang]   #2 0x780fd6c82c!libbinder.so _ZN7android14IPCThreadState14joinThreadPoolEb+0x10c
+[hang]   #3 0x780fd7589c!libbinder.so _ZN7android10PoolThread10threadLoopEv+0x1c
+[hang]   #4 0x7801162c94!libutils.so _ZN7android6Thread11_threadLoopEPv+0x174
+[hang]   #5 0x7809172a80!libandroid_runtime.so _ZN7android14AndroidRuntime15javaThreadShellEPv+0x90
+[hang]   #6 0x7814f000dc!libc.so _ZL15__pthread_startPv+0xcc
+[hang]   #7 0x7814ef1414!libc.so __start_thread+0x44
+[hang] --- tid=22925 (Profile Saver)
+[hang]   #0 0x756440ef38!libart.so _ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+0x90
+[hang]   #1 0x756440ef38!libart.so _ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+0x90
+[hang]   #2 0x756440ef38!libart.so _ZN3art17ConditionVariable16WaitHoldingLocksEPNS_6ThreadE+0x90
+[hang] --- tid=22926 (SharedPreferenc)
+[hang]   #0 0x7564669534!libart.so _ZN3art6Thread4ParkEbl+0x304
+[hang]   #1 0x7564669534!libart.so _ZN3art6Thread4ParkEbl+0x304
+[hang]   #2 0x7564669534!libart.so _ZN3art6Thread4ParkEbl+0x304
+[hang] --- tid=22928 (OkDownload Remi)
+[hang]   #0 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #1 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #2 0x7809211270!libandroid_runtime.so _ZN7androidL38android_os_MessageQueue_nativePollOnceEP7_JNIEnvP8_jobjectli+0x30
+[hang]   #3 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang]   #4 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang] --- tid=22929 (titan:instance1)
+[hang]   #0 0x7439955d50!libVPhoneGaGaLib.so 0x753d50
+[hang]   #1 0x7439955d50!libVPhoneGaGaLib.so 0x753d50
+[hang]   #2 0x7814f000dc!libc.so _ZL15__pthread_startPv+0xcc
+[hang]   #3 0x7814ef1414!libc.so __start_thread+0x44
+[hang] --- tid=22931 (singleThread)
+[hang]   #0 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #1 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #2 0x7809211270!libandroid_runtime.so _ZN7androidL38android_os_MessageQueue_nativePollOnceEP7_JNIEnvP8_jobjectli+0x30
+[hang]   #3 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang]   #4 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang] --- tid=22932 (pool-4-thread-1)
+[hang]   #0 0x75646693e8!libart.so _ZN3art6Thread4ParkEbl+0x1b8
+[hang]   #1 0x75646693e8!libart.so _ZN3art6Thread4ParkEbl+0x1b8
+[hang]   #2 0x75646693e8!libart.so _ZN3art6Thread4ParkEbl+0x1b8
+[hang] --- tid=22933 (ConnectivityThr)
+[hang]   #0 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #1 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #2 0x7809211270!libandroid_runtime.so _ZN7androidL38android_os_MessageQueue_nativePollOnceEP7_JNIEnvP8_jobjectli+0x30
+[hang]   #3 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang]   #4 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang] --- tid=22934 (work_thread)
+[hang]   #0 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #1 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #2 0x7809211270!libandroid_runtime.so _ZN7androidL38android_os_MessageQueue_nativePollOnceEP7_JNIEnvP8_jobjectli+0x30
+[hang]   #3 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang]   #4 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang] --- tid=22935 (pool-5-thread-1)
+[hang]   #0 0x75646693e8!libart.so _ZN3art6Thread4ParkEbl+0x1b8
+[hang]   #1 0x75646693e8!libart.so _ZN3art6Thread4ParkEbl+0x1b8
+[hang]   #2 0x75646693e8!libart.so _ZN3art6Thread4ParkEbl+0x1b8
+[hang] --- tid=22936 (newsp0)
+[hang]   #0 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #1 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #2 0x7809211270!libandroid_runtime.so _ZN7androidL38android_os_MessageQueue_nativePollOnceEP7_JNIEnvP8_jobjectli+0x30
+[hang]   #3 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang]   #4 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang] --- tid=22937 (newsp1)
+[hang]   #0 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #1 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #2 0x7809211270!libandroid_runtime.so _ZN7androidL38android_os_MessageQueue_nativePollOnceEP7_JNIEnvP8_jobjectli+0x30
+[hang]   #3 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang]   #4 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang] --- tid=22938 (newsp2)
+[hang]   #0 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #1 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #2 0x7809211270!libandroid_runtime.so _ZN7androidL38android_os_MessageQueue_nativePollOnceEP7_JNIEnvP8_jobjectli+0x30
+[hang]   #3 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang]   #4 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang] --- tid=22939 (pool-6-thread-1)
+[hang]   #0 0x7564669534!libart.so _ZN3art6Thread4ParkEbl+0x304
+[hang]   #1 0x7564669534!libart.so _ZN3art6Thread4ParkEbl+0x304
+[hang]   #2 0x7564669534!libart.so _ZN3art6Thread4ParkEbl+0x304
+[hang] --- tid=22940 (pool-5-thread-2)
+[hang]   #0 0x75646693e8!libart.so _ZN3art6Thread4ParkEbl+0x1b8
+[hang]   #1 0x75646693e8!libart.so _ZN3art6Thread4ParkEbl+0x1b8
+[hang]   #2 0x75646693e8!libart.so _ZN3art6Thread4ParkEbl+0x1b8
+[hang] --- tid=22942 (u-apm anr)
+[hang]   #0 0x742d09cce4!libucrash.so 0x5ce4
+[hang]   #1 0x742d09cce4!libucrash.so 0x5ce4
+[hang]   #2 0x7814f000dc!libc.so _ZL15__pthread_startPv+0xcc
+[hang]   #3 0x7814ef1414!libc.so __start_thread+0x44
+[hang] --- tid=22943 (u-apm cb)
+[hang]   #0 0x742d09bb90!libucrash.so 0x4b90
+[hang]   #1 0x742d09bb90!libucrash.so 0x4b90
+[hang]   #2 0x7814f000dc!libc.so _ZL15__pthread_startPv+0xcc
+[hang]   #3 0x7814ef1414!libc.so __start_thread+0x44
+[hang] --- tid=22944 (u-apm jni)
+[hang]   #0 0x742d09bcfc!libucrash.so 0x4cfc
+[hang]   #1 0x742d09bcfc!libucrash.so 0x4cfc
+[hang]   #2 0x7814f000dc!libc.so _ZL15__pthread_startPv+0xcc
+[hang]   #3 0x7814ef1414!libc.so __start_thread+0x44
+[hang] --- tid=22946 (efs-base)
+[hang]   #0 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #1 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #2 0x7809211270!libandroid_runtime.so _ZN7androidL38android_os_MessageQueue_nativePollOnceEP7_JNIEnvP8_jobjectli+0x30
+[hang]   #3 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang]   #4 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang] --- tid=22947 (ANR HANDLER THR)
+[hang]   #0 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #1 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #2 0x7809211270!libandroid_runtime.so _ZN7androidL38android_os_MessageQueue_nativePollOnceEP7_JNIEnvP8_jobjectli+0x30
+[hang]   #3 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang]   #4 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang] --- tid=22948 (ANR HANDLER THR)
+[hang]   #0 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #1 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #2 0x7809211270!libandroid_runtime.so _ZN7androidL38android_os_MessageQueue_nativePollOnceEP7_JNIEnvP8_jobjectli+0x30
+[hang]   #3 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang]   #4 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang] --- tid=22950 (FileObserver)
+[hang]   #0 0x7809272f10!libandroid_runtime.so _ZN7androidL31android_os_fileobserver_observeEP7_JNIEnvP8_jobjecti+0xb0
+[hang]   #1 0x7809272f10!libandroid_runtime.so _ZN7androidL31android_os_fileobserver_observeEP7_JNIEnvP8_jobjecti+0xb0
+[hang]   #2 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang]   #3 0x71c04d40!boot.oat art_jni_trampoline+0x70
+[hang] --- tid=22951 (RenderThread)
+[hang]   #0 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #1 0x780115efc4!libutils.so _ZN7android6Looper8pollOnceEiPiS1_PPv+0xd4
+[hang]   #2 0x77f6d0eb78!libhwui.so _ZN7android10uirenderer12renderthread12RenderThread10threadLoopEv+0xd8
+[hang]   #3 0x7801162c94!libutils.so _ZN7android6Thread11_threadLoopEPv+0x174
+[hang]   #4 0x7814f000dc!libc.so _ZL15__pthread_startPv+0xcc
+[hang]   #5 0x7814ef1414!libc.so __start_thread+0x44
+[hang] --- tid=22977 (RxSchedulerPurg)
+[hang]   #0 0x7564669534!libart.so _ZN3art6Thread4ParkEbl+0x304
+[hang]   #1 0x7564669534!libart.so _ZN3art6Thread4ParkEbl+0x304
+[hang]   #2 0x7564669534!libart.so _ZN3art6Thread4ParkEbl+0x304
+[hang] --- tid=22978 (RxCachedWorkerP)
+[hang]   #0 0x7564669534!libart.so _ZN3art6Thread4ParkEbl+0x304
+[hang]   #1 0x7564669534!libart.so _ZN3art6Thread4ParkEbl+0x304
+[hang]   #2 0x7564669534!libart.so _ZN3art6Thread4ParkEbl+0x304
+[hang] --- tid=22981 (mali-mem-purge)
+[hang]   #0 0x7814eeff64!libc.so _Z15__futex_wait_exPVvbibPK8timespec+0x94
+[hang]   #1 0x7814eeff64!libc.so _Z15__futex_wait_exPVvbibPK8timespec+0x94
+[hang]   #2 0x7814eff368!libc.so pthread_cond_timedwait+0x88
+[hang]   #3 0x750f7a8f9c!vulkan.ums9632.so osup_sync_object_timedwait+0xcc
+[hang]   #4 0x750f639448!vulkan.ums9632.so 0x72e448
+[hang]   #5 0x7814f000dc!libc.so _ZL15__pthread_startPv+0xcc
+[hang]   #6 0x7814ef1414!libc.so __start_thread+0x44
+[hang] --- tid=22982 (mali-utility-wo)
+[hang]   #0 0x7814eeff64!libc.so _Z15__futex_wait_exPVvbibPK8timespec+0x94
+[hang]   #1 0x7814eeff64!libc.so _Z15__futex_wait_exPVvbibPK8timespec+0x94
+[hang]   #2 0x7814f04a34!libc.so sem_wait+0x74
+[hang]   #3 0x750f547ad4!vulkan.ums9632.so 0x63cad4
+[hang]   #4 0x7814f000dc!libc.so _ZL15__pthread_startPv+0xcc
+[hang]   #5 0x7814ef1414!libc.so __start_thread+0x44
+[hang] --- tid=22983 (mali-utility-wo)
+[hang]   #0 0x7814eeff64!libc.so _Z15__futex_wait_exPVvbibPK8timespec+0x94
+[hang]   #1 0x7814eeff64!libc.so _Z15__futex_wait_exPVvbibPK8timespec+0x94
+[hang]   #2 0x7814f04a34!libc.so sem_wait+0x74
+[hang]   #3 0x750f547ad4!vulkan.ums9632.so 0x63cad4
+[hang]   #4 0x7814f000dc!libc.so _ZL15__pthread_startPv+0xcc
+[hang]   #5 0x7814ef1414!libc.so __start_thread+0x44
+[hang] --- tid=22984 (mali-utility-wo)
+[hang]   #0 0x7814eeff64!libc.so _Z15__futex_wait_exPVvbibPK8timespec+0x94
+[hang]   #1 0x7814eeff64!libc.so _Z15__futex_wait_exPVvbibPK8timespec+0x94
+[hang]   #2 0x7814f04a34!libc.so sem_wait+0x74
+[hang]   #3 0x750f547ad4!vulkan.ums9632.so 0x63cad4
+[hang]   #4 0x7814f000dc!libc.so _ZL15__pthread_startPv+0xcc
+[hang]   #5 0x7814ef1414!libc.so __start_thread+0x44
+[hang] --- tid=22985 (mali-utility-wo)
+[hang]   #0 0x7814eeff64!libc.so _Z15__futex_wait_exPVvbibPK8timespec+0x94
+[hang]   #1 0x7814eeff64!libc.so _Z15__futex_wait_exPVvbibPK8timespec+0x94
+[hang]   #2 0x7814f04a34!libc.so sem_wait+0x74
+[hang]   #3 0x750f547ad4!vulkan.ums9632.so 0x63cad4
+[hang]   #4 0x7814f000dc!libc.so _ZL15__pthread_startPv+0xcc
+[hang]   #5 0x7814ef1414!libc.so __start_thread+0x44
+[hang] --- tid=22986 (mali-utility-wo)
+[hang]   #0 0x7814eeff64!libc.so _Z15__futex_wait_exPVvbibPK8timespec+0x94
+[hang]   #1 0x7814eeff64!libc.so _Z15__futex_wait_exPVvbibPK8timespec+0x94
+[hang]   #2 0x7814f04a34!libc.so sem_wait+0x74
+[hang]   #3 0x750f547ad4!vulkan.ums9632.so 0x63cad4
+[hang]   #4 0x7814f000dc!libc.so _ZL15__pthread_startPv+0xcc
+[hang]   #5 0x7814ef1414!libc.so __start_thread+0x44
+[hang] --- tid=22987 (mali-utility-wo)
+[hang]   #0 0x7814eeff64!libc.so _Z15__futex_wait_exPVvbibPK8timespec+0x94
+[hang]   #1 0x7814eeff64!libc.so _Z15__futex_wait_exPVvbibPK8timespec+0x94
+[hang]   #2 0x7814f04a34!libc.so sem_wait+0x74
+[hang]   #3 0x750f547ad4!vulkan.ums9632.so 0x63cad4
+[hang]   #4 0x7814f000dc!libc.so _ZL15__pthread_startPv+0xcc
+[hang]   #5 0x7814ef1414!libc.so __start_thread+0x44
+[hang] --- tid=22988 (mali-utility-wo)
+[hang]   #0 0x7814eeff64!libc.so _Z15__futex_wait_exPVvbibPK8timespec+0x94
+[hang]   #1 0x7814eeff64!libc.so _Z15__futex_wait_exPVvbibPK8timespec+0x94
+[hang]   #2 0x7814f04a34!libc.so sem_wait+0x74
+[hang]   #3 0x750f547ad4!vulkan.ums9632.so 0x63cad4
+[hang]   #4 0x7814f000dc!libc.so _ZL15__pthread_startPv+0xcc
+[hang]   #5 0x7814ef1414!libc.so __start_thread+0x44
+[hang] --- tid=22989 (mali-utility-wo)
+[hang]   #0 0x7814eeff64!libc.so _Z15__futex_wait_exPVvbibPK8timespec+0x94
+[hang]   #1 0x7814eeff64!libc.so _Z15__futex_wait_exPVvbibPK8timespec+0x94
+[hang]   #2 0x7814f04a34!libc.so sem_wait+0x74
+[hang]   #3 0x750f547ad4!vulkan.ums9632.so 0x63cad4
+[hang]   #4 0x7814f000dc!libc.so _ZL15__pthread_startPv+0xcc
+[hang]   #5 0x7814ef1414!libc.so __start_thread+0x44
+[hang] --- tid=22990 (mali-cmar-backe)
+[hang]   #0 0x7814efda70!libc.so poll+0x60
+[hang]   #1 0x7814efda70!libc.so poll+0x60
+[hang]   #2 0x750f547d7c!vulkan.ums9632.so 0x63cd7c
+[hang]   #3 0x7814f000dc!libc.so _ZL15__pthread_startPv+0xcc
+[hang]   #4 0x7814ef1414!libc.so __start_thread+0x44
+[hang] --- tid=22992 (process reaper)
+[hang]   #0 0x7564669534!libart.so _ZN3art6Thread4ParkEbl+0x304
+[hang]   #1 0x7564669534!libart.so _ZN3art6Thread4ParkEbl+0x304
+[hang]   #2 0x7564669534!libart.so _ZN3art6Thread4ParkEbl+0x304
+[hang] done
+[Z2469N::Gadget ]-> Connection terminated
+[Z2469N::Gadget ]->
+
+Thank you for using Frida!

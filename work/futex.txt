@@ -1,0 +1,3470 @@
+     ____
+    / _  |   Frida 17.18.0 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   Prefer a GUI? Luma is the official Frida app, with a live REPL,
+   . . . .   persistent sessions & collaboration. https://luma.frida.re/
+   . . . .
+   . . . .   Connected to Z2469N (id=YFZ2469IDAD1000242)
+Attaching...
+[fx] syscall @ 0x7814f16890
+[fx] tracing
+[fx] WAKE uaddr=0xb400007696666b24 n=0x1 tid=26148
+[fx] WAKE uaddr=0xb4000075e664959c n=0x1 tid=26148
+[fx] WAIT uaddr=0xb4000075e66495c0 val=0x10 timeout=0x75288bb238 tid=26148
+[fx] WAKE uaddr=0xb400007696649ae4 n=0x1 tid=26149
+[fx] WAIT uaddr=0xb4000076667b0880 val=0x2 timeout=0x7412cbcff8 tid=26257
+[fx] WAKE uaddr=0xb400007696649ae4 n=0x1 tid=26151
+[fx] WAIT uaddr=0xb40000760665f350 val=0x1 timeout=0x752758ab78 tid=26151
+[fx] WAKE uaddr=0xb4000076966660e4 n=0x1 tid=26149
+[fx] WAKE uaddr=0xb400007696666b24 n=0x1 tid=26149
+[fx] WAIT uaddr=0xb400007606668980 val=0x1 timeout=0x0 tid=26149
+[fx] WAKE uaddr=0xb4000076667b0880 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076966660e4 n=0x1 tid=26150
+[fx] WAIT uaddr=0xb40000760665a400 val=0x1 timeout=0x0 tid=26150
+[fx] WAIT uaddr=0xb4000076667b0880 val=0x2 timeout=0x7412cbcff8 tid=26257
+[fx] WAIT uaddr=0xb4000076667b5bf0 val=0x2 timeout=0x7412ba4ff8 tid=26260
+[fx] WAKE uaddr=0x743abf85e0 n=0x7fffffff tid=26143
+[fx] WAKE uaddr=0xb40000764663bf68 n=0x7fffffff tid=26143
+[Z2469N::Gadget ]-> [fx] WAKE uaddr=0xb4000076c663d06c n=0x7fffffff tid=26263
+[fx] WAIT uaddr=0x782c481824 val=0x0 timeout=0x0 tid=26264
+[fx] WAIT uaddr=0xb40000769663ede4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000769663ede4 n=0x1 tid=26263
+[fx] WAKE uaddr=0x7822f6f008 n=0x7fffffff tid=26143
+[fx] WAKE uaddr=0xb4000075e669eb80 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb400007736646e90 n=0x1 tid=26267
+[fx] WAKE uaddr=0x7422fb8470 n=0x1 tid=26268
+[fx] WAKE uaddr=0x7422fb8470 n=0x1 tid=26267
+[fx] WAKE uaddr=0xb4000075e669de90 n=0x7fffffff tid=26182
+[fx] WAIT uaddr=0xb40000769663ede4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000769663ede4 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAIT uaddr=0xb4000076b6639f84 val=0x5 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x21 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x23 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26156
+[fx] WAIT uaddr=0xb4000076c6652408 val=0x2 timeout=0x7526d46538 tid=26156
+[fx] WAKE uaddr=0xb4000076966433e4 n=0x1 tid=26143
+[fx] WAIT uaddr=0xb400007606656c20 val=0x48 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb4000076966433e4 n=0x1 tid=26269
+[fx] WAIT uaddr=0xb4000076667be700 val=0x2 timeout=0x7412152068 tid=26269
+[fx] WAKE uaddr=0xb4000076c663d06c n=0x7fffffff tid=26263
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076667be700 n=0x1 tid=26165
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x25 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb400007696667724 n=0x1 tid=26269
+[fx] WAIT uaddr=0xb4000076667be700 val=0x2 timeout=0x7412152068 tid=26269
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb400007696667724 n=0x1 tid=26165
+[fx] WAIT uaddr=0xb400007606674f80 val=0x1 timeout=0x0 tid=26165
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x28 timeout=0x0 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639f84 val=0x5 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x2d timeout=0x0 tid=26147
+[fx] WAKE uaddr=0x743f3de0b0 n=0x7fffffff tid=26165
+[fx] WAKE uaddr=0xb4000076c663d06c n=0x7fffffff tid=26263
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x2f timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076c663d06c n=0x7fffffff tid=26263
+[fx] WAKE uaddr=0xb4000076966433e4 n=0x1 tid=26143
+[fx] WAIT uaddr=0xb400007606656c20 val=0x49 timeout=0x0 tid=26143
+[fx] WAIT uaddr=0xb4000076966433e4 val=0x5 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb4000076966433e4 n=0x1 tid=26270
+[fx] WAKE uaddr=0xb4000075e66ac6e0 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb4000075e66ac6b8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000075e66ac6b8 n=0x1 tid=26143
+[fx] WAKE uaddr=0x77fe070000 n=0x7fffffff tid=26271
+[fx] WAKE uaddr=0xb4000076966433e4 n=0x1 tid=26143
+[fx] WAIT uaddr=0xb400007606656c20 val=0x4a timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb4000076966433e4 n=0x1 tid=26272
+[fx] WAKE uaddr=0xb4000075e6679aa0 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb4000075e6679a78 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000075e6679a78 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0x77f735ab50 n=0x1 tid=26182
+[fx] WAKE uaddr=0x750ee9b008 n=0x7fffffff tid=26271
+[fx] WAKE uaddr=0xb4000076667c8554 n=0x7fffffff tid=26271
+[fx] WAKE uaddr=0xb4000076c66801b4 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb4000076667c71e8 n=0x1 tid=26182
+[fx] WAKE uaddr=0x7814f84000 n=0x1 tid=26271
+[fx] WAKE uaddr=0xb4000076667c71e8 n=0x1 tid=26271
+[fx] WAKE uaddr=0xb4000076667c71e8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c031a18 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb4000075e66aa7f0 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb4000076c663d06c n=0x7fffffff tid=26263
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26263
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26143
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26143
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26263
+[fx] WAKE uaddr=0xb4000075e66aea50 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000077266621b0 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb4000077266621b0 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb4000077266621b0 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb4000075e66b0820 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb4000075e66b07f8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000075e66b07f8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0x77f735ab50 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb4000075e66b1990 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0x743abf9310 n=0x7fffffff tid=26143
+[fx] WAKE uaddr=0x743abf90c8 n=0x7fffffff tid=26143
+[fx] WAKE uaddr=0x743abf9318 n=0x7fffffff tid=26143
+[fx] WAKE uaddr=0x743abf9320 n=0x7fffffff tid=26143
+[fx] WAKE uaddr=0x743abf9324 n=0x7fffffff tid=26143
+[fx] WAKE uaddr=0x743abf9210 n=0x7fffffff tid=26143
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02dd60 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0x73e6f0878c n=0x1 tid=26270
+[fx] WAKE uaddr=0xb40000769666c064 n=0x1 tid=26270
+[fx] WAKE uaddr=0xb40000769666c064 n=0x1 tid=26276
+[fx] WAIT uaddr=0xb4000076066828d0 val=0x0 timeout=0x0 tid=26270
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x30 timeout=0x0 tid=26147
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x31 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x32 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x33 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x34 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x35 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x36 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x37 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb4000075e664959c n=0x1 tid=26148
+[fx] WAIT uaddr=0xb4000075e66495c0 val=0x10 timeout=0x75288bb238 tid=26148
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x38 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x3a timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x3b timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb400007696649ae4 n=0x1 tid=26151
+[fx] WAIT uaddr=0xb40000760665f350 val=0x1 timeout=0x752758ab78 tid=26151
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x3c timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x3e timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x3f timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x40 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0x7814f84000 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x41 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x43 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x44 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x46 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x47 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000075e664959c n=0x1 tid=26148
+[fx] WAIT uaddr=0xb4000075e66495c0 val=0x10 timeout=0x0 tid=26148
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x48 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x49 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c031a18 n=0x7fffffff tid=26195
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26156
+[fx] WAIT uaddr=0xb4000076c6652408 val=0x3 timeout=0x7526d46538 tid=26156
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x4a timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x4c timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x4d timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x4e timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x4f timeout=0x0 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639f84 val=0x5 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x50 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb40000758665ef50 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb40000758665ef50 n=0x1 tid=26274
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x51 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x52 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26156
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAIT uaddr=0xb4000076c6652408 val=0x3 timeout=0x0 tid=26156
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x53 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x54 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x55 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x56 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x57 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x58 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x5a timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x5b timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x5c timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c031a18 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x5d timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x5e timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x5f timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb400007656651f5c n=0x7fffffff tid=26262
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26262
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26266
+[fx] WAIT uaddr=0xb4000076667bcb30 val=0x2 timeout=0x0 tid=26262
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26341
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26342
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26341
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26343
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26341
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26343
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26342
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26343
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26342
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26266
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26346
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26347
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26346
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26347
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26346
+[fx] WAKE uaddr=0x73ff5904f4 n=0x7fffffff tid=26344
+[fx] WAKE uaddr=0xb4000076966733e4 n=0x1 tid=26266
+[fx] WAIT uaddr=0xb400007606691510 val=0x0 timeout=0x0 tid=26266
+[fx] WAKE uaddr=0xb4000076966733e4 n=0x1 tid=26352
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26364
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26368
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26366
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26266
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26365
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26266
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26364
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26368
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26367
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26367
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26368
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26143
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26365
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26366
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26266
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26367
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26266
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26366
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26365
+[fx] WAKE uaddr=0x7823c60008 n=0x7fffffff tid=26344
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26266
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0x75166b0008 n=0x7fffffff tid=26344
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26266
+[fx] WAKE uaddr=0x73ff5900c8 n=0x7fffffff tid=26344
+[fx] WAKE uaddr=0x73ff5900cc n=0x7fffffff tid=26344
+[fx] WAKE uaddr=0x73ff590128 n=0x1 tid=26344
+[fx] WAKE uaddr=0x750ed12888 n=0x1 tid=26372
+[fx] WAKE uaddr=0x750ed12888 n=0x1 tid=26344
+[fx] WAKE uaddr=0x750ed12b38 n=0x7fffffff tid=26344
+[fx] WAKE uaddr=0x7814f770c8 n=0x1 tid=26344
+[fx] WAIT uaddr=0x7814f770c8 val=0x2 timeout=0x0 tid=26372
+[fx] WAKE uaddr=0x7814f770c8 n=0x1 tid=26372
+[fx] WAKE uaddr=0x73ff5bc980 n=0x1 tid=26372
+[fx] WAKE uaddr=0x73ff5bc980 n=0x1 tid=26344
+[fx] WAKE uaddr=0x7814f773c8 n=0x1 tid=26372
+[fx] WAIT uaddr=0x7814f773c8 val=0x2 timeout=0x0 tid=26344
+[fx] WAKE uaddr=0x7814f773c8 n=0x1 tid=26344
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x73ff590128 n=0x1 tid=26344
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x60 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0x73ff5900f8 n=0x1 tid=26344
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb4000076667bb4b8 n=0x7fffffff tid=26344
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb4000076e66389d4 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26376
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26344
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0x7814f7b484 val=0x2 timeout=0x0 tid=26376
+[fx] WAKE uaddr=0x7814f7b484 n=0x1 tid=26266
+[fx] WAKE uaddr=0x7814f7b484 n=0x1 tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26339
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26347
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26348
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26347
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26348
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26155
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076b6640ff8 n=0x1 tid=26182
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26155
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26340
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26341
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26340
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26341
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x61 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26155
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e170 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26155
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x62 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAIT uaddr=0xb4000076b6639f84 val=0x5 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x63 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26155
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26155
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0xb4000076b6641020 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAIT uaddr=0xb40000759664a8f4 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb40000759664a8f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26155
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0xb400007696649ae4 n=0x1 tid=26151
+[fx] WAIT uaddr=0xb40000760665f350 val=0x1 timeout=0x0 tid=26151
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0xb4000076c668d81c n=0x7fffffff tid=26430
+[fx] WAKE uaddr=0xb4000076c668d7f4 n=0x1 tid=26430
+[fx] WAKE uaddr=0xb4000076c668d7f4 n=0x1 tid=26431
+[fx] WAKE uaddr=0xb4000076c66417dc n=0x7fffffff tid=26430
+[fx] WAKE uaddr=0xb4000076c669005c n=0x7fffffff tid=26430
+[fx] WAKE uaddr=0xb4000076c668d11c n=0x7fffffff tid=26430
+[fx] WAKE uaddr=0x742da71dc8 n=0x7fffffff tid=26431
+[fx] WAKE uaddr=0x742da71dc8 n=0x7fffffff tid=26432
+[fx] WAKE uaddr=0x742da71dc8 n=0x7fffffff tid=26434
+[fx] WAKE uaddr=0xb4000076c668d81c n=0x7fffffff tid=26430
+[fx] WAIT uaddr=0x73e9220700 val=0x673f timeout=0x0 tid=26430
+[fx] WAKE uaddr=0xb4000076c66417dc n=0x7fffffff tid=26430
+[fx] WAIT uaddr=0x73d98e5700 val=0x6740 timeout=0x0 tid=26430
+[fx] WAKE uaddr=0xb4000076c669005c n=0x7fffffff tid=26430
+[fx] WAIT uaddr=0x73d97e1700 val=0x6741 timeout=0x0 tid=26430
+[fx] WAKE uaddr=0xb4000076c668d11c n=0x7fffffff tid=26430
+[fx] WAIT uaddr=0x73d96dd700 val=0x6742 timeout=0x0 tid=26430
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb40000766668ac30 val=0x2 timeout=0x0 tid=26430
+[fx] WAKE uaddr=0xb4000075e66eaa80 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb4000075e66eaa58 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000075e66eaa58 n=0x1 tid=26143
+[fx] WAKE uaddr=0x77f735ab50 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000075e66eaa80 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb4000076d667f620 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076d667f620 n=0x1 tid=26267
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0xb4000075e66e9b50 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb4000075e66e9b28 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000075e66e9b28 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000075e66ec7c0 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb4000075e66ec798 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000075e66ec798 n=0x1 tid=26143
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0xb4000075e66ebc80 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb4000076b665d220 n=0x1 tid=26182
+[fx] WAKE uaddr=0x77f735ab50 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000782c031a18 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000075e66ebd10 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb4000076b665d220 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb40000765664f810 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c02e20c n=0x1 tid=26195
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0xb40000758665ef78 n=0x1 tid=26153
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0xb4000076d667f620 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076d667f620 n=0x1 tid=26153
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0xb4000075e6682ce0 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb400007676678430 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c031a18 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb40000782c031828 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb40000782c031828 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000075e6682ce0 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0xb4000076966873a4 n=0x1 tid=26441
+[fx] WAIT uaddr=0xb4000076066998e0 val=0x0 timeout=0x73d9ce7ba8 tid=26441
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x65 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076c663d06c n=0x7fffffff tid=26263
+[fx] WAKE uaddr=0x7829c3c018 n=0x7fffffff tid=26263
+[fx] WAKE uaddr=0x7829c38018 n=0x7fffffff tid=26263
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAIT uaddr=0xb4000076b6639f84 val=0x3 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x67 timeout=0x0 tid=26147
+[fx] WAIT uaddr=0xb40000769663f2e4 val=0x3 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb40000769663f2e4 n=0x1 tid=26156
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x6a timeout=0x0 tid=26147
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26156
+[fx] WAIT uaddr=0xb4000076c6652408 val=0x4 timeout=0x0 tid=26156
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666698ab0 val=0x2 timeout=0x7412ff8068 tid=26253
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26143
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26263
+[fx] WAKE uaddr=0xb4000076667bb530 n=0x7fffffff tid=26263
+[fx] WAKE uaddr=0xb40000769668912c n=0x7fffffff tid=26375
+[fx] WAKE uaddr=0xb4000076667bb530 n=0x7fffffff tid=26263
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x73dedf8068 tid=26369
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0xb4000075e66e8830 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb400007676679830 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb4000076b664b184 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb4000075e66e8830 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb4000075e66e8830 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb4000075e66e8808 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000075e66e8808 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000075e66e8830 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0xb4000076667bb530 n=0x7fffffff tid=26263
+[fx] WAKE uaddr=0xb40000769666c0ec n=0x7fffffff tid=26375
+[fx] WAKE uaddr=0xb4000076c663d06c n=0x7fffffff tid=26263
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAIT uaddr=0xb4000076b6639f84 val=0x5 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x6c timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076b66485c4 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb4000076b66485f4 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb4000076b66485f4 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000075e66ebd10 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb4000075e66ebd10 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb4000076c663d06c n=0x7fffffff tid=26263
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x6e timeout=0x0 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639f84 val=0x5 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x70 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076c663d06c n=0x7fffffff tid=26263
+[fx] WAIT uaddr=0x741245e700 val=0x669a timeout=0x0 tid=26263
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26344
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26341
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26343
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26343
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26344
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26341
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26340
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26342
+[fx] WAKE uaddr=0x7814f84000 n=0x1 tid=26342
+[fx] WAKE uaddr=0x7814f84000 n=0x1 tid=26340
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26340
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26342
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26348
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26393
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26385
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26346
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26346
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26388
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26382
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26391
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26266
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26266
+[fx] WAKE uaddr=0xb4000076667bb530 n=0x7fffffff tid=26266
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26348
+[fx] WAIT uaddr=0x73d7a79700 val=0x6707 timeout=0x0 tid=26266
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26389
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26386
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26346
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26383
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26347
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26346
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26266
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26347
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26266
+[fx] WAIT uaddr=0x74c1569700 val=0x66ea timeout=0x0 tid=26266
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26346
+[fx] WAIT uaddr=0xb400007666906f90 val=0x2 timeout=0x0 tid=26369
+[fx] WAIT uaddr=0x74c1875700 val=0x66e7 timeout=0x0 tid=26266
+[fx] WAIT uaddr=0x74c1979700 val=0x66e6 timeout=0x0 tid=26266
+[fx] WAIT uaddr=0x74c1a7d700 val=0x66e5 timeout=0x0 tid=26266
+[fx] WAIT uaddr=0x74c1b81700 val=0x66e4 timeout=0x0 tid=26266
+[fx] WAIT uaddr=0x74c1361700 val=0x66ec timeout=0x0 tid=26266
+[fx] WAKE uaddr=0x782c4826d8 n=0x7fffffff tid=26376
+[fx] WAIT uaddr=0x74c1465700 val=0x66eb timeout=0x0 tid=26266
+[fx] WAIT uaddr=0x74c125d700 val=0x66ed timeout=0x0 tid=26266
+[fx] WAIT uaddr=0x73f2593700 val=0x66fe timeout=0x0 tid=26266
+[fx] WAIT uaddr=0x73f3848700 val=0x66fc timeout=0x0 tid=26266
+[fx] WAIT uaddr=0x73f3744700 val=0x66fd timeout=0x0 tid=26266
+[fx] WAIT uaddr=0x74c166d700 val=0x66e9 timeout=0x0 tid=26266
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26344
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26345
+[fx] WAIT uaddr=0x73d7975700 val=0x6708 timeout=0x0 tid=26344
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26376
+[fx] WAKE uaddr=0x743abe3b98 n=0x1 tid=26345
+[fx] WAIT uaddr=0x74c1771700 val=0x66e8 timeout=0x0 tid=26266
+[fx] WAKE uaddr=0xb400007807fc0a18 n=0x7fffffff tid=26344
+[fx] WAKE uaddr=0xb400007676759030 n=0x7fffffff tid=26363
+[fx] WAKE uaddr=0xb400007676759430 n=0x7fffffff tid=26363
+[fx] WAKE uaddr=0xb400007676759460 n=0x1 tid=26363
+[fx] WAKE uaddr=0xb400007676759460 n=0x1 tid=26344
+[fx] WAKE uaddr=0xb400007676759030 n=0x7fffffff tid=26363
+[fx] WAIT uaddr=0x73f238b700 val=0x6700 timeout=0x0 tid=26266
+[fx] WAIT uaddr=0x74c1055700 val=0x66ef timeout=0x0 tid=26266
+[fx] WAIT uaddr=0x73f248f700 val=0x66ff timeout=0x0 tid=26266
+[fx] WAIT uaddr=0x74c1159700 val=0x66ee timeout=0x0 tid=26266
+[fx] WAIT uaddr=0x74c1c85700 val=0x66e3 timeout=0x0 tid=26266
+[fx] WAKE uaddr=0xb4000076667bc060 n=0x7fffffff tid=26263
+[fx] WAIT uaddr=0x7412562700 val=0x6699 timeout=0x0 tid=26263
+[fx] WAKE uaddr=0xb4000076c663d06c n=0x7fffffff tid=26263
+[fx] WAKE uaddr=0x782c481824 n=0x7fffffff tid=26143
+[fx] WAKE uaddr=0xb4000075e6697440 n=0x7fffffff tid=26182
+[fx] WAKE uaddr=0xb4000076b66505e4 n=0x7fffffff tid=26195
+[fx] WAKE uaddr=0xb4000076b6650614 n=0x1 tid=26195
+[fx] WAKE uaddr=0xb4000076b6650614 n=0x1 tid=26182
+[fx] WAKE uaddr=0xb4000075e6697440 n=0x7fffffff tid=26182
+[fx] WAIT uaddr=0x7412a8d700 val=0x6695 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAIT uaddr=0xb4000076b6639f84 val=0x5 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26143
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076c66523e4 n=0x1 tid=26147
+[fx] WAKE uaddr=0xb4000076b6639f84 n=0x1 tid=26147
+[fx] WAIT uaddr=0xb4000076b6639fa8 val=0x75 timeout=0x0 tid=26147
+[fx] WAKE uaddr=0xb4000076966433e4 n=0x1 tid=26143
+[fx] WAIT uaddr=0xb400007606656c20 val=0x4b timeout=0x0 tid=26143
+[fx] WAIT uaddr=0xb4000076966433e4 val=0x5 timeout=0x0 tid=26143
+[fx] WAKE uaddr=0xb4000076966433e4 n=0x1 tid=26444
+Connection terminated
+
+Thank you for using Frida!

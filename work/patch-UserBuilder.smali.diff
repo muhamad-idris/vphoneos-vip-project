@@ -1,0 +1,47 @@
+--- ./work/orig/com.vphonegaga.titan.user/User$Builder.smali.orig	2026-10-14 18:29:49.093395073 +0700
++++ ./work/apktool-out/smali_classes3/com/vphonegaga/titan/user/User$Builder.smali	2026-10-14 18:44:56.196538120 +0700
+@@ -83,6 +83,14 @@
+     .line 7
+     iput-boolean v0, p0, Lcom/vphonegaga/titan/user/User$Builder;->enableAccAdvanceFeatures:Z
+ 
++    # PATCH isVip=true: override Builder default VIP to true (keep enableAccAdvanceFeatures false)
++    const/4 v0, 0x1
++
++    iput-boolean v0, p0, Lcom/vphonegaga/titan/user/User$Builder;->isVip:Z
++
++    # PATCH vip-flags: override Builder default advance-features to true
++    iput-boolean v0, p0, Lcom/vphonegaga/titan/user/User$Builder;->enableAccAdvanceFeatures:Z
++
+     .line 8
+     .line 9
+     const-string v0, ""
+@@ -624,6 +632,9 @@
+     .locals 0
+ 
+     .line 1
++    # PATCH vip-flags: ignore input, force Builder advance-features true
++    const/4 p1, 0x1
++
+     iput-boolean p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->enableAccAdvanceFeatures:Z
+ 
+     .line 2
+@@ -688,6 +699,9 @@
+     .locals 0
+ 
+     .line 1
++    # PATCH isVip=true: ignore input, force Builder VIP true
++    const/4 p1, 0x1
++
+     iput-boolean p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->isVip:Z
+ 
+     .line 2
+@@ -976,6 +990,9 @@
+     .locals 0
+ 
+     .line 1
++    # PATCH vip-flags: ignore input, force Builder subscribed
++    const/4 p1, 0x1
++
+     iput p1, p0, Lcom/vphonegaga/titan/user/User$Builder;->subscription:I
+ 
+     .line 2
